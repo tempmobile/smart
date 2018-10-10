@@ -1,0 +1,2097 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<configuration>
+    <params>
+        <param name="pin_number" description="">
+            <type>setting</type>
+            <enabled>true</enabled>
+            <number>320</number>
+        </param>
+        <param name="PrintAutoSubscriptionCheck" description="Р СџР ВµРЎвЂЎР В°РЎвЂљРЎРЉ РЎвЂЎР ВµР С”Р В° Р С—Р С∙ РЎРѓР С∙Р Р†Р ВµРЎР‚РЎв‚¬РЎвЂ˜Р Р…Р Р…Р С∙Р С˜РЎС“ Р В°Р Р†РЎвЂљР С∙Р С—Р В»Р В°РЎвЂљР ВµР В¶РЎС“">
+            <type>setting</type>
+            <enabled>true</enabled>
+        </param>
+        <param name="RecommendedPayments" description="Карточка поставщика">
+            <type>list</type>
+            <enabled>true</enabled>
+            <nodes>
+                <node id="node0.online.sberbank.ru">
+                    <paymentService>true</paymentService>
+                    <debtService>true</debtService>
+                </node>
+                <node id="node1.online.sberbank.ru">
+                    <paymentService>true</paymentService>
+                    <debtService>true</debtService>
+                </node>
+                <node id="node2.online.sberbank.ru">
+                    <paymentService>true</paymentService>
+                    <debtService>true</debtService>
+                </node>
+                <node id="node3.online.sberbank.ru">
+                    <paymentService>true</paymentService>
+                    <debtService>true</debtService>
+                </node>
+
+                <node id="greenfield1.online.sberbank.ru">
+                    <paymentService>true</paymentService>
+                    <debtService>true</debtService>
+                </node>
+
+                <node id="mobile.sberbank.ru">
+                    <paymentService>true</paymentService>
+                    <debtService>true</debtService>
+                </node>
+
+                <node id="ift-node1.testonline.sberbank.ru">
+                    <paymentService>true</paymentService>
+                    <debtService>true</debtService>
+                </node>
+                <node id="ift-node2.testonline.sberbank.ru">
+                    <paymentService>true</paymentService>
+                    <debtService>true</debtService>
+                </node>
+            
+                <node id="ift-node1-mp.testonline.sberbank.ru">
+                    <paymentService>true</paymentService>
+                    <debtService>true</debtService>
+                </node>                                      
+                <node id="ift-node2-mp.testonline.sberbank.ru">
+                    <paymentService>true</paymentService>
+                    <debtService>true</debtService>                  
+                </node>
+                
+                <node id="psinode2.testonline.sberbank.ru">
+                    <paymentService>true</paymentService>
+                    <debtService>true</debtService>
+                </node>
+                <node id="psinode1.testonline.sberbank.ru">
+                    <paymentService>true</paymentService>
+                    <debtService>true</debtService>
+                </node>
+                
+                <node id="194.186.207.23">
+                    <paymentService>true</paymentService>
+                    <debtService>true</debtService>                  
+                </node>
+            </nodes>
+        </param>
+        <param name="alf" description="">
+            <type>setting</type>
+            <enabled>true</enabled>
+        </param>
+        <param name="uak" description="">
+            <type>setting</type>
+            <enabled>true</enabled>
+            <syncContacts>true</syncContacts>
+        </param>
+        <param name="avatar" description="">
+            <type>setting</type>
+            <enabled>true</enabled>
+        </param>
+        <param name="rating" description="">
+            <type>setting</type>
+            <enabled>true</enabled>
+        </param>
+        <param name="standin" description="">
+            <type>setting</type>
+            <enabled>false</enabled>
+            <host>node0.online.sberbank.ru</host>
+        </param>
+        <param name="gamification" description="">
+            <type>setting</type>
+            <enabled>false</enabled>
+        </param>
+        <param name="aeroexpress" description="">
+            <type>service</type>
+            <enabled>true</enabled>
+        </param>
+        <param name="statement" description="">
+            <type>service</type>
+            <enabled>true</enabled>
+        </param>
+        <param name="VMT" description="VISA MoneyTransfer">
+            <type>limit</type>
+            <enabled>true</enabled>
+            <minamount>1</minamount>
+            <maxamount>30000</maxamount>
+            <cumulative>30000</cumulative>
+            <currency>RUB</currency>
+        </param>
+        <param name="MCMS" description="MasterCard MoneySend">
+            <type>limit</type>
+            <enabled>true</enabled>
+            <minamount>1</minamount>
+            <maxamount>30000</maxamount>
+            <cumulative>150000</cumulative>
+            <currency>RUB</currency>
+        </param>
+        <param name="tarifPlanParams" description="">
+            <type>list</type>
+            <enabled>true</enabled>
+            <tarifPlans>
+                <tarifPlan id="0">
+                    <phoneNumbers>
+                        <phoneNumber cntr="ru" prior="1" addInfo="Р СџР С∙ Р  Р С∙РЎРѓРЎРѓР С‘Р С‘ Р В±Р ВµРЎРѓР С—Р В»Р В°РЎвЂљР Р…Р С∙ (Р СљР СћР РЋ, Р вЂ˜Р С‘Р В»Р В°Р в„–Р Р…, Р СљР ВµР С–Р В°РЎвЂћР С∙Р Р…, Tele2, Yota)" pin="320">900</phoneNumber>
+                        <phoneNumber cntr="other" prior="2" addInfo="Р пїЅР В·-Р В·Р В° Р С–РЎР‚Р В°Р Р…Р С‘РЎвЂ РЎвЂ№ Р С—Р С∙ РЎвЂљР В°РЎР‚Р С‘РЎвЂћРЎС“ Р С∙Р С—Р ВµРЎР‚Р В°РЎвЂљР С∙РЎР‚Р В°" pin="320">+7(495) 500-55-50</phoneNumber>
+                    </phoneNumbers>
+                </tarifPlan>
+                <tarifPlan id="1">
+                    <phoneNumbers>
+                        <phoneNumber cntr="ru" prior="1" addInfo="Р СџР С∙ Р  Р С∙РЎРѓРЎРѓР С‘Р С‘ Р В±Р ВµРЎРѓР С—Р В»Р В°РЎвЂљР Р…Р С∙" pin="20">8-800-555-02-55</phoneNumber>
+                        <phoneNumber cntr="other" prior="2" addInfo="Р пїЅР В·-Р В·Р В° Р С–РЎР‚Р В°Р Р…Р С‘РЎвЂ РЎвЂ№ Р С—Р С∙ РЎвЂљР В°РЎР‚Р С‘РЎвЂћРЎС“ Р С∙Р С—Р ВµРЎР‚Р В°РЎвЂљР С∙РЎР‚Р В°" pin="">+7(495) 669-06-38</phoneNumber>
+                    </phoneNumbers>
+                </tarifPlan>
+                <tarifPlan id="2">
+                    <phoneNumbers>
+                        <phoneNumber cntr="ru" prior="1" addInfo="Р СџР С∙ Р  Р С∙РЎРѓРЎРѓР С‘Р С‘ Р В±Р ВµРЎРѓР С—Р В»Р В°РЎвЂљР Р…Р С∙ (Р СљР СћР РЋ, Р вЂ˜Р С‘Р В»Р В°Р в„–Р Р…, Р СљР ВµР С–Р В°РЎвЂћР С∙Р Р…, Tele2, Yota)" pin="320">900</phoneNumber>
+                        <phoneNumber cntr="other" prior="2" addInfo="Р пїЅР В·-Р В·Р В° Р С–РЎР‚Р В°Р Р…Р С‘РЎвЂ РЎвЂ№ Р С—Р С∙ РЎвЂљР В°РЎР‚Р С‘РЎвЂћРЎС“ Р С∙Р С—Р ВµРЎР‚Р В°РЎвЂљР С∙РЎР‚Р В°" pin="320">+7(495) 500-55-50</phoneNumber>
+                    </phoneNumbers>
+                </tarifPlan>
+                <tarifPlan id="3">
+                    <phoneNumbers>
+                        <phoneNumber cntr="ru" prior="1" addInfo="Р СџР С∙ Р  Р С∙РЎРѓРЎРѓР С‘Р С‘ Р В±Р ВµРЎРѓР С—Р В»Р В°РЎвЂљР Р…Р С∙" pin="">8-800-333-22-33</phoneNumber>
+                        <phoneNumber cntr="other" prior="2" addInfo="Р пїЅР В·-Р В·Р В° Р С–РЎР‚Р В°Р Р…Р С‘РЎвЂ РЎвЂ№ Р С—Р С∙ РЎвЂљР В°РЎР‚Р С‘РЎвЂћРЎС“ Р С∙Р С—Р ВµРЎР‚Р В°РЎвЂљР С∙РЎР‚Р В°" pin="">+7(495) 544-45-40</phoneNumber>
+                    </phoneNumbers>
+                </tarifPlan>
+            </tarifPlans>
+        </param>
+        <param name="newVersion" description="">
+            <type>setting</type>
+            <enabled>true</enabled>
+            <newVersion>8.3.1</newVersion>
+        </param>
+        <param name="scan_period" description="">
+            <type>setting</type>
+            <enabled>true</enabled>
+            <scan_period>7</scan_period>
+        </param>
+        <param name="Manual" description="Р  РЎС“Р С”Р С∙Р Р†Р С∙Р Т‘РЎРѓРЎвЂљР Р†Р С∙ Р С—Р С∙Р В»РЎРЉР В·Р С∙Р Р†Р В°РЎвЂљР ВµР В»РЎРЏ">
+            <type>link</type>
+            <link>http://www.sberbank.ru/common/img/uploaded/files/pdf/Manual_Android.pdf</link>
+        </param>
+        <param name="craudgifting" description="switch for craudgifting">
+            <type>setting</type>
+            <languages localeId="ru" enabled="true" />
+            <languages localeId="en" enabled="false" />
+        </param>
+        <param name="moneybox" description="">
+            <type>setting</type>
+            <enabled>true</enabled>
+        </param>
+        <param name="budget" description="Р вЂ˜РЎР‹Р Т‘Р В¶Р ВµРЎвЂљ Р Р…Р В° РЎРѓР ВµР С–Р С∙Р Т‘Р Р…РЎРЏ">
+            <type>setting</type>
+            <enabled>true</enabled>
+        </param>
+        <param name="marketplaceMainScreenOffer" description="Р СџРЎР‚Р С∙Р С˜Р С∙-Р В±Р В»Р С∙Р С” Р В±Р В°Р Р…Р С”Р С∙Р Р†РЎРѓР С”Р С‘РЎвЂ¦ Р С—РЎР‚Р С∙Р Т‘РЎС“Р С”РЎвЂљР С∙Р Р† Р С‘ РЎвЂљР С∙РЎвЂЎР С”Р В° Р Р†РЎвЂ¦Р С∙Р Т‘Р В° Р Р…Р В° Р Р†Р С‘РЎвЂљРЎР‚Р С‘Р Р…РЎС“ Р Р…Р В° Р С–Р В»Р В°Р Р†Р Р…Р С∙Р С˜ РЎРЊР С”РЎР‚Р В°Р Р…Р Вµ Р СљР Сџ">
+            <type>setting</type>
+            <enabled>true</enabled>
+        </param>
+        <param name="newmarketplace" description="Р вЂ™Р С‘РЎвЂљРЎР‚Р С‘Р Р…Р В° 8.3">
+            <type>setting</type>
+            <enabled>true</enabled>
+            <urls>
+                <url name="marketplace_v1" url="https://stat.online.sberbank.ru/PhizIC-res/mapicfg/marketplace/config.android.7.7.xml" version="7.11" />
+                <url name="marketplace_v2" url="https://stat.online.sberbank.ru/PhizIC-res/mapicfg/marketplace/config.android.7.11.xml" version="7.11" />
+                <url name="marketplace_v2" url="https://stat.online.sberbank.ru/PhizIC-res/mapicfg/marketplace/config.android.8.0.xml" version="8.0" />
+                <url name="marketplace_v2" url="https://stat.online.sberbank.ru/PhizIC-res/mapicfg/marketplace/config.android.8.1.xml" version="8.1" />
+                <url name="marketplace_v2" url="https://stat.online.sberbank.ru/PhizIC-res/mapicfg/marketplace/config.android.8.2.xml" version="8.2" />
+            </urls>
+            <nodes>
+                <node id="node0.online.sberbank.ru">
+                    <enabled_Marketplace_2_0>true</enabled_Marketplace_2_0>
+                    <mainEntryEnabled>true</mainEntryEnabled>
+                    <allProductsEnabled>true</allProductsEnabled>
+                </node>
+                <node id="node1.online.sberbank.ru">
+                    <enabled_Marketplace_2_0>true</enabled_Marketplace_2_0>
+                    <mainEntryEnabled>true</mainEntryEnabled>
+                    <allProductsEnabled>true</allProductsEnabled>
+                </node>
+                <node id="node2.online.sberbank.ru">
+                    <enabled_Marketplace_2_0>true</enabled_Marketplace_2_0>
+                    <mainEntryEnabled>true</mainEntryEnabled>
+                    <allProductsEnabled>true</allProductsEnabled>
+                </node>
+                <node id="node3.online.sberbank.ru">
+                    <enabled_Marketplace_2_0>true</enabled_Marketplace_2_0>
+                    <mainEntryEnabled>true</mainEntryEnabled>
+                    <allProductsEnabled>true</allProductsEnabled>
+                </node>
+                <node id="node4.online.sberbank.ru">
+                    <enabled_Marketplace_2_0>true</enabled_Marketplace_2_0>
+                    <mainEntryEnabled>true</mainEntryEnabled>
+                    <allProductsEnabled>true</allProductsEnabled>
+                </node>
+                <node id="greenfield1.online.sberbank.ru">
+                    <enabled_Marketplace_2_0>true</enabled_Marketplace_2_0>
+                    <mainEntryEnabled>true</mainEntryEnabled>
+                    <allProductsEnabled>true</allProductsEnabled>
+                </node>
+                <node id="greenfield2.online.sberbank.ru">
+                    <enabled_Marketplace_2_0>true</enabled_Marketplace_2_0>
+                    <mainEntryEnabled>true</mainEntryEnabled>
+                    <allProductsEnabled>true</allProductsEnabled>
+                </node>
+            </nodes>
+        </param>
+        <param name="marketplace_search_ignore" description="Р СњР Вµ Р С∙РЎвЂљР С∙Р В±РЎР‚Р В°Р В¶Р ВµР Р…Р С‘Р Вµ Р Р† Р С—Р С∙Р С‘РЎРѓР С”Р Вµ Р С∙Р С—РЎР‚Р ВµР Т‘Р ВµР В»Р ВµР Р…Р Р…РЎвЂ№РЎвЂ¦ Р С—Р С∙РЎРѓРЎвЂљР В°Р Р†РЎвЂ°Р С‘Р С”Р С∙Р Р† РЎС“РЎРѓР В»РЎС“Р С–">
+            <type>setting</type>
+            <enabled>false</enabled>
+        </param>
+        <param name="tips" description="">
+            <type>setting</type>
+            <enabled>true</enabled>
+        </param>
+        <param name="local_tips" description="">
+            <type>setting</type>
+            <enabled>true</enabled>
+        </param>
+        <param name="pushErib" description="">
+            <type>setting</type>
+            <enabled>true</enabled>
+        </param>
+        <param name="aim_status" description="Р пїЅР Р…Р Т‘Р С‘Р С”Р В°РЎвЂ Р С‘РЎРЏ Р Р†РЎвЂ№Р С—Р С∙Р В»Р Р…Р ВµР Р…Р С‘РЎРЏ РЎвЂ Р ВµР В»Р С‘">
+            <type>setting</type>
+            <enabled>true</enabled>
+        </param>
+        <param name="aim_share" description="Р РЃР В°РЎР‚Р С‘Р Р…Р С– РЎвЂ Р ВµР В»Р С‘">
+            <type>setting</type>
+            <enabled>true</enabled>
+        </param>
+        <param name="aim_ShortTermsView" description="Р С›РЎвЂљР С∙Р В±РЎР‚Р В°Р В¶Р ВµР Р…Р С‘Р Вµ РЎС“РЎРѓР В»Р С∙Р Р†Р С‘Р в„– Р Р†Р С”Р В»Р В°Р Т‘Р В° Р Р† Р Р†Р С‘Р Т‘Р Вµ РЎРѓР С—Р С‘РЎРѓР С”Р В° Р С—РЎР‚Р С‘ Р С∙РЎвЂљР С”РЎР‚РЎвЂ№РЎвЂљР С‘Р С‘">
+            <type>setting</type>
+            <enabled>true</enabled>
+        </param>
+        <param name="AccountSpecialCondition" description="Р РЋР С—Р ВµРЎвЂ Р С‘Р В°Р В»РЎРЉР Р…РЎвЂ№Р Вµ РЎС“РЎРѓР В»Р С∙Р Р†Р С‘РЎРЏ Р С—Р С∙ Р Р†Р С”Р В»Р В°Р Т‘РЎС“. Р С›Р С–РЎР‚Р В°Р Р…Р С‘РЎвЂЎР ВµР Р…Р С‘Р Вµ Р Р…Р В° Р С˜Р В°Р С”РЎРѓР С‘Р С˜Р В°Р В»РЎРЉР Р…РЎС“РЎР‹ РЎРѓРЎС“Р С˜Р С˜РЎС“">
+            <type>setting</type>
+            <enabled>true</enabled>
+        </param>
+        <param name="AccountSpecialConditionSum" description="Р СљР В°Р С”РЎРѓР С‘Р С˜Р В°Р В»РЎРЉР Р…Р С∙Р Вµ Р В·Р Р…Р В°РЎвЂЎР ВµР Р…Р С‘Р Вµ Р С—Р ВµРЎР‚Р Р†Р С∙Р Р…Р В°РЎвЂЎР В°Р В»РЎРЉР Р…Р С∙Р С–Р С∙ Р Р†Р В·Р Р…Р С∙РЎРѓР В°, РЎРѓ Р С”Р С∙РЎвЂљР С∙РЎР‚Р С∙Р С–Р С∙ Р Р…Р В°РЎвЂЎР С‘Р Р…Р В°Р ВµРЎвЂљ Р Т‘Р ВµР в„–РЎРѓРЎвЂљР Р†Р С∙Р Р†Р В°РЎвЂљРЎРЉ Р С—Р С∙Р Р…Р С‘Р В¶Р ВµР Р…Р Р…РЎвЂ№Р в„– Р С—РЎР‚Р С∙РЎвЂ Р ВµР Р…РЎвЂљ Р С—Р С∙ Р Р†Р С”Р В»Р В°Р Т‘РЎС“">
+            <currencies>
+                <currency>
+                    <id>RUB</id>
+                    <maxamount>100000</maxamount>
+                </currency>
+                <currency>
+                    <id>OTHER</id>
+                    <maxamount>0</maxamount>
+                </currency>
+            </currencies>
+        </param>
+        <param name="PFMDashboardIncomeHide" description="Р вЂќР В°РЎв‚¬Р В±Р С∙Р В°РЎР‚Р Т‘, Р Т‘Р С∙РЎвЂ¦Р С∙Р Т‘РЎвЂ№, РЎРѓР С”РЎР‚РЎвЂ№РЎвЂљР С‘Р Вµ Р С’Р вЂєР В¤ Р С∙Р С—Р ВµРЎР‚Р В°РЎвЂ Р С‘Р в„–">
+            <type>list</type>
+            <enabled>true</enabled>
+            <PfmNodes>
+                <node id="node0.online.sberbank.ru">
+                    <dashboard-76>true</dashboard-76>
+                    <income>true</income>
+                    <hidealfoperations>true</hidealfoperations>
+                    <renameRecognizedOperations>true</renameRecognizedOperations>
+                </node>
+                <node id="node1.online.sberbank.ru">
+                    <dashboard-76>true</dashboard-76>
+                    <income>true</income>
+                   <hidealfoperations>true</hidealfoperations>
+                    <renameRecognizedOperations>true</renameRecognizedOperations>
+                </node>
+                <node id="node2.online.sberbank.ru">
+                    <dashboard-76>true</dashboard-76>
+                    <income>true</income>
+                    <hidealfoperations>true</hidealfoperations>
+                    <renameRecognizedOperations>true</renameRecognizedOperations>
+                </node>
+                <node id="node3.online.sberbank.ru">
+                    <dashboard-76>true</dashboard-76>
+                    <income>true</income>
+                    <hidealfoperations>true</hidealfoperations>
+                    <renameRecognizedOperations>true</renameRecognizedOperations>
+                </node>
+                <node id="node4.online.sberbank.ru">
+                    <dashboard-76>true</dashboard-76>
+                    <income>true</income>
+                    <hidealfoperations>true</hidealfoperations>
+                    <renameRecognizedOperations>true</renameRecognizedOperations>
+                </node>
+                <node id="greenfield1.online.sberbank.ru">
+                    <dashboard-76>true</dashboard-76>
+                    <income>true</income>
+                    <hidealfoperations>true</hidealfoperations>
+                    <renameRecognizedOperations>true</renameRecognizedOperations>
+                </node>
+                <node id="greenfield2.online.sberbank.ru">
+                    <dashboard-76>true</dashboard-76>
+                    <income>true</income>
+                    <hidealfoperations>true</hidealfoperations>
+                    <renameRecognizedOperations>true</renameRecognizedOperations>
+                </node>
+            </PfmNodes>
+        </param>
+        <param name="pfmHosts" description="Р РЋР С—Р С‘РЎРѓР С∙Р С” РЎвЂ¦Р С∙РЎРѓРЎвЂљР С∙Р Р† Р Т‘Р В»РЎРЏ phizPFM">
+            <type>list</type>
+            <enabled>true</enabled>
+            <hosts>
+                <host id="node0.online.sberbank.ru">
+                    <value>pfm.node0.online.sberbank.ru:4433</value>
+                </host>
+                <host id="node1.online.sberbank.ru">
+                    <value>node1.online.sberbank.ru:6655</value>
+                </host>
+                <host id="node2.online.sberbank.ru">
+                    <value>node2.online.sberbank.ru:6655</value>
+                </host>
+                <host id="node3.online.sberbank.ru">
+                    <value>node3.online.sberbank.ru:6655</value>
+                </host>
+                <host id="node4.online.sberbank.ru">
+                    <value>node4.online.sberbank.ru:6655</value>
+                </host>
+                <host id="greenfield1.online.sberbank.ru">
+                    <value>greenfield1.online.sberbank.ru:6655</value>
+                </host>
+                <host id="greenfield2.online.sberbank.ru">
+                    <value>greenfield2.online.sberbank.ru:6655</value>
+                </host>
+            </hosts>
+        </param>
+        <param name="PFMTipsCloseEmptyQuizCount" description="Р вЂ™Р ВµРЎР‚Р С∙РЎРЏРЎвЂљР Р…Р С∙РЎРѓРЎвЂљРЎРЉ, РЎРѓ Р С”Р С∙РЎвЂљР С∙РЎР‚Р С∙Р в„– Р С—Р С∙Р В»РЎРЉР В·Р С∙Р Р†Р В°РЎвЂљР ВµР В»РЎР‹ Р В±РЎС“Р Т‘Р ВµРЎвЂљ Р С—РЎР‚Р ВµР Т‘Р В»Р С∙Р В¶Р ВµР Р…Р С∙ Р Р†РЎвЂ№Р В±РЎР‚Р В°РЎвЂљРЎРЉ Р С—РЎР‚Р С‘РЎвЂЎР С‘Р Р…РЎС“ РЎРѓР С”РЎР‚РЎвЂ№РЎвЂљР С‘РЎРЏ РЎРѓР С∙Р Р†Р ВµРЎвЂљР В°">
+            <type>setting</type>
+            <enabled>false</enabled>
+            <value>0.25</value>
+        </param>
+        <param name="PushPlatformID" description="URL РЎРѓР ВµРЎР‚Р Р†Р ВµРЎР‚Р С∙Р Р† Push-Р С—Р В»Р В°РЎвЂљРЎвЂћР С∙РЎР‚Р С˜РЎвЂ№">
+            <type>setting</type>
+            <enabled>true</enabled>
+            <platforms>
+                <platform id="3" url="https://pushserver.mfms.ru/sbrf" />
+                <platform id="4" url="https://pushserver.sberbank-tele.com" />
+            </platforms>
+        </param>
+        <param name="invoicing" description="Р пїЅР Р…Р Р†Р С∙Р в„–РЎРѓР С‘Р Р…Р С– 7.6. Р СњР ВµР С∙Р В±РЎвЂ¦Р С∙Р Т‘Р С‘Р С˜ Р Т‘Р В»РЎРЏ Р С∙Р В±РЎР‚Р В°РЎвЂљР Р…Р С∙Р в„– РЎРѓР С∙Р Р†Р С˜Р ВµРЎРѓРЎвЂљР С‘Р С˜Р С∙РЎРѓРЎвЂљР С‘">
+            <type>service</type>
+            <enabled>true</enabled>
+        </param>
+        <param name="e_invoicing" description="Р пїЅР Р…Р Р†Р С∙Р в„–РЎРѓР С‘Р Р…Р С–. Р С›Р С—Р В»Р В°РЎвЂљР В° РЎРѓРЎвЂЎРЎвЂ˜РЎвЂљР В° Р С—Р С∙ Р Р†Р Р…Р ВµРЎв‚¬Р Р…Р ВµР в„– РЎРѓРЎРѓРЎвЂ№Р В»Р С”Р Вµ">
+            <type>service</type>
+            <enabled>true</enabled>
+        </param>
+        <param name="aim_close" description="Р вЂ”Р В°Р С”РЎР‚РЎвЂ№РЎвЂљР С‘Р Вµ Р В¦Р ВµР В»Р С‘">
+            <type>setting</type>
+            <enabled>true</enabled>
+        </param>
+        <param name="aim_withDeposit" description="Р С›РЎвЂљР С”РЎР‚РЎвЂ№РЎвЂљР С‘Р Вµ РЎвЂ Р ВµР В»Р С‘ РЎРѓ Р Р†РЎвЂ№Р В±Р С∙РЎР‚Р С∙Р С˜ РЎвЂљР С‘Р С—Р В° Р Р†Р С”Р В»Р В°Р Т‘Р В°">
+            <type>setting</type>
+            <enabled>true</enabled>
+        </param>
+        <param name="aim_withCurrency" description="Р С›РЎвЂљР С”РЎР‚РЎвЂ№РЎвЂљР С‘Р Вµ Р Р†Р В°Р В»РЎР‹РЎвЂљР Р…РЎвЂ№РЎвЂ¦ РЎвЂ Р ВµР В»Р ВµР в„–">
+            <type>setting</type>
+            <enabled>true</enabled>
+        </param>
+        <param name="CorePermissions" description="Р С™Р С∙Р Р…РЎРѓР С∙Р В»Р С‘Р Т‘Р С‘РЎР‚Р С∙Р Р†Р В°Р Р…Р Р…РЎвЂ№Р Вµ Р Р†Р С”Р В»РЎР‹РЎвЂЎР В°РЎвЂљР ВµР В»Р С‘ РЎвЂћРЎС“Р Р…Р С”РЎвЂ Р С‘Р С∙Р Р…Р В°Р В»Р В° Core APP">
+            <type>list</type>
+            <enabled>true</enabled>
+            <nodes>
+                <node id="node0.online.sberbank.ru">
+                    <coreQR>true</coreQR>
+                    <smart_inbox>false</smart_inbox>
+                    <accountclosing>true</accountclosing>
+                    <deliveryCard>true</deliveryCard>
+                    <arrests>true</arrests>
+                    <pciDss>true</pciDss>
+                    <creditCardAutorepayment>false</creditCardAutorepayment>
+                    <creditCardArrears>true</creditCardArrears>
+                    <autoTransfers>false</autoTransfers>
+                    <SBTelecom>false</SBTelecom>
+                    <CreditRating>false</CreditRating>
+                    <EribPenaltyDocumentsSavingAllowed>true</EribPenaltyDocumentsSavingAllowed>
+                    <EribPenaltyDocumentsListEnabled>false</EribPenaltyDocumentsListEnabled>
+                    <Spasibo>true</Spasibo>
+                    <historyRouterEnabled>true</historyRouterEnabled>
+                    <enableContactManager>false</enableContactManager>
+                    <pensionTransfer_actual>true</pensionTransfer_actual>
+                    <governmentServices>true</governmentServices>
+                    <UFSHost>https://pfl.efs.sigma.sbrf.ru</UFSHost>
+                    <pensionCertificate>true</pensionCertificate>
+                    <overseasTransfer>false</overseasTransfer>
+                    <newSectionInvestEnable>true</newSectionInvestEnable>
+                </node>
+                <node id="node1.online.sberbank.ru">
+                    <coreQR>true</coreQR>
+                    <smart_inbox>false</smart_inbox>
+                    <accountclosing>true</accountclosing>
+                    <deliveryCard>true</deliveryCard>
+                    <arrests>true</arrests>
+                    <pciDss>true</pciDss>
+                    <creditCardAutorepayment>true</creditCardAutorepayment>
+                    <creditCardArrears>true</creditCardArrears>
+                    <autoTransfers>false</autoTransfers>
+                    <autoTransfers_7_10>true</autoTransfers_7_10>
+                    <SBTelecom>true</SBTelecom>
+                    <CreditRating>false</CreditRating>
+                    <EribPenaltyDocumentsSavingAllowed>true</EribPenaltyDocumentsSavingAllowed>
+                    <EribPenaltyDocumentsListEnabled>false</EribPenaltyDocumentsListEnabled>
+                    <Spasibo>true</Spasibo>
+                    <showUfsHistoryOperations>true</showUfsHistoryOperations>
+                    <historyRouterEnabled>true</historyRouterEnabled>
+                    <enableContactManager>true</enableContactManager>
+                    <pensionTransfer_actual>true</pensionTransfer_actual>
+                    <governmentServices>true</governmentServices>
+                    <UFSHost>https://pfl.efs.sigma.sbrf.ru</UFSHost>
+                    <pensionCertificate>true</pensionCertificate>
+                    <overseasTransfer>false</overseasTransfer>
+                    <newSectionInvestEnable>true</newSectionInvestEnable>
+                </node>
+                <node id="node2.online.sberbank.ru">
+                    <coreQR>true</coreQR>
+                    <smart_inbox>false</smart_inbox>
+                    <accountclosing>true</accountclosing>
+                    <deliveryCard>true</deliveryCard>
+                    <arrests>true</arrests>
+                    <pciDss>true</pciDss>
+                    <creditCardAutorepayment>true</creditCardAutorepayment>
+                    <creditCardArrears>true</creditCardArrears>
+                    <autoTransfers>false</autoTransfers>
+                    <autoTransfers_7_10>true</autoTransfers_7_10>
+                    <SBTelecom>true</SBTelecom>
+                    <CreditRating>false</CreditRating>
+                    <EribPenaltyDocumentsSavingAllowed>true</EribPenaltyDocumentsSavingAllowed>
+                    <EribPenaltyDocumentsListEnabled>false</EribPenaltyDocumentsListEnabled>
+                    <Spasibo>true</Spasibo>
+                    <showUfsHistoryOperations>true</showUfsHistoryOperations>
+                    <historyRouterEnabled>true</historyRouterEnabled>
+                    <enableContactManager>true</enableContactManager>
+                    <pensionTransfer_actual>true</pensionTransfer_actual>
+                    <governmentServices>true</governmentServices>
+                    <UFSHost>https://pfl.efs.sigma.sbrf.ru</UFSHost>
+                    <pensionCertificate>true</pensionCertificate>
+                    <overseasTransfer>false</overseasTransfer>
+                    <newSectionInvestEnable>true</newSectionInvestEnable>
+                </node>
+                <node id="node3.online.sberbank.ru">
+                    <coreQR>true</coreQR>
+                    <smart_inbox>false</smart_inbox>
+                    <accountclosing>true</accountclosing>
+                    <deliveryCard>true</deliveryCard>
+                    <arrests>true</arrests>
+                    <pciDss>true</pciDss>
+                    <creditCardAutorepayment>true</creditCardAutorepayment>
+                    <creditCardArrears>true</creditCardArrears>
+                    <autoTransfers>false</autoTransfers>
+                    <autoTransfers_7_10>true</autoTransfers_7_10>
+                    <SBTelecom>true</SBTelecom>
+                    <CreditRating>false</CreditRating>
+                    <EribPenaltyDocumentsSavingAllowed>true</EribPenaltyDocumentsSavingAllowed>
+                    <EribPenaltyDocumentsListEnabled>false</EribPenaltyDocumentsListEnabled>
+                    <Spasibo>true</Spasibo>
+                    <showUfsHistoryOperations>true</showUfsHistoryOperations>
+                    <historyRouterEnabled>true</historyRouterEnabled>
+                    <enableContactManager>true</enableContactManager>
+                    <pensionTransfer_actual>true</pensionTransfer_actual>
+                    <governmentServices>true</governmentServices>
+                    <UFSHost>https://pfl.efs.sigma.sbrf.ru</UFSHost>
+                    <pensionCertificate>true</pensionCertificate>
+                    <overseasTransfer>false</overseasTransfer>
+                    <newSectionInvestEnable>true</newSectionInvestEnable>
+                </node>
+                <node id="node4.online.sberbank.ru">
+                    <coreQR>true</coreQR>
+                    <smart_inbox>false</smart_inbox>
+                    <accountclosing>true</accountclosing>
+                    <deliveryCard>true</deliveryCard>
+                    <arrests>true</arrests>
+                    <pciDss>true</pciDss>
+                    <creditCardAutorepayment>true</creditCardAutorepayment>
+                    <creditCardArrears>true</creditCardArrears>
+                    <autoTransfers>false</autoTransfers>
+                    <autoTransfers_7_10>true</autoTransfers_7_10>
+                    <SBTelecom>true</SBTelecom>
+                    <CreditRating>false</CreditRating>
+                    <EribPenaltyDocumentsSavingAllowed>true</EribPenaltyDocumentsSavingAllowed>
+                    <EribPenaltyDocumentsListEnabled>false</EribPenaltyDocumentsListEnabled>
+                    <Spasibo>true</Spasibo>
+                    <showUfsHistoryOperations>true</showUfsHistoryOperations>
+                    <historyRouterEnabled>true</historyRouterEnabled>
+                    <enableContactManager>true</enableContactManager>
+                    <pensionTransfer_actual>true</pensionTransfer_actual>
+                    <governmentServices>true</governmentServices>
+                    <UFSHost>https://pfl.efs.sigma.sbrf.ru</UFSHost>
+                    <pensionCertificate>true</pensionCertificate>
+                    <overseasTransfer>false</overseasTransfer>
+                    <newSectionInvestEnable>true</newSectionInvestEnable>
+                </node>
+                <node id="greenfield1.online.sberbank.ru">
+                    <coreQR>true</coreQR>
+                    <smart_inbox>true</smart_inbox>
+                    <accountclosing>true</accountclosing>
+                    <deliveryCard>true</deliveryCard>
+                    <arrests>true</arrests>
+                    <pciDss>true</pciDss>
+                    <creditCardAutorepayment>true</creditCardAutorepayment>
+                    <creditCardArrears>true</creditCardArrears>
+                    <autoTransfers>false</autoTransfers>
+                    <autoTransfers_7_10>true</autoTransfers_7_10>
+                    <SBTelecom>true</SBTelecom>
+                    <CreditRating>false</CreditRating>
+                    <governmentServices>true</governmentServices>
+                    <pensionTransfer_actual>true</pensionTransfer_actual>
+                    <pensionCertificate>true</pensionCertificate>
+                    <UFSHost>https://pfl.efs.sigma.sbrf.ru</UFSHost>
+                    <showUfsHistoryOperations>true</showUfsHistoryOperations>
+                    <EribPenaltyDocumentsSavingAllowed>true</EribPenaltyDocumentsSavingAllowed>
+                    <EribPenaltyDocumentsListEnabled>true</EribPenaltyDocumentsListEnabled>
+                    <Spasibo>true</Spasibo>
+                    <historyRouterEnabled>true</historyRouterEnabled>
+                    <enableContactManager>true</enableContactManager>
+                    <overseasTransfer>true</overseasTransfer>
+                    <newSectionInvestEnable>true</newSectionInvestEnable>
+                </node>
+                <node id="greenfield2.online.sberbank.ru">
+                    <coreQR>true</coreQR>
+                    <smart_inbox>true</smart_inbox>
+                    <accountclosing>true</accountclosing>
+                    <deliveryCard>true</deliveryCard>
+                    <arrests>true</arrests>
+                    <pciDss>true</pciDss>
+                    <creditCardAutorepayment>true</creditCardAutorepayment>
+                    <creditCardArrears>true</creditCardArrears>
+                    <autoTransfers>false</autoTransfers>
+                    <autoTransfers_7_10>true</autoTransfers_7_10>
+                    <SBTelecom>true</SBTelecom>
+                    <CreditRating>false</CreditRating>
+                    <governmentServices>true</governmentServices>
+                    <pensionTransfer_actual>true</pensionTransfer_actual>
+                    <pensionCertificate>true</pensionCertificate>
+                    <UFSHost/>
+                    <showUfsHistoryOperations>true</showUfsHistoryOperations>
+                    <EribPenaltyDocumentsSavingAllowed>true</EribPenaltyDocumentsSavingAllowed>
+                    <EribPenaltyDocumentsListEnabled>false</EribPenaltyDocumentsListEnabled>
+                    <Spasibo>true</Spasibo>
+                    <historyRouterEnabled>true</historyRouterEnabled>
+                    <enableContactManager>true</enableContactManager>
+                    <overseasTransfer>true</overseasTransfer>
+                    <newSectionInvestEnable>true</newSectionInvestEnable>
+                </node>
+            </nodes>
+        </param>
+        <param name="ufsOperationDetailHistoryAlert" description="">
+            <type>strings</type>
+            <string>Р вЂ™РЎвЂ№ Р Р…Р Вµ Р С˜Р С∙Р В¶Р ВµРЎвЂљР Вµ Р С—Р С∙РЎРѓР С˜Р С∙РЎвЂљРЎР‚Р ВµРЎвЂљРЎРЉ Р Т‘Р В°Р Р…Р Р…РЎС“РЎР‹ Р С∙Р С—Р ВµРЎР‚Р В°РЎвЂ Р С‘РЎР‹ РЎвЂЎР ВµРЎР‚Р ВµР В· Р С˜Р С∙Р В±Р С‘Р В»РЎРЉР Р…Р С∙Р Вµ Р С—РЎР‚Р С‘Р В»Р С∙Р В¶Р ВµР Р…Р С‘Р Вµ. Р вЂќР В»РЎРЏ Р С—РЎР‚Р С∙РЎРѓР С˜Р С∙РЎвЂљРЎР‚Р В° Р Р†Р С∙РЎРѓР С—Р С∙Р В»РЎРЉР В·РЎС“Р в„–РЎвЂљР ВµРЎРѓРЎРЉ Р Р†Р ВµР В±-Р Р†Р ВµРЎР‚РЎРѓР С‘Р ВµР в„– Р РЋР В±Р ВµРЎР‚Р В±Р В°Р Р…Р С” Р С›Р Р…Р В»Р В°Р в„–Р Р….</string>
+        </param>
+        <param name="extendedPermission" description="">
+            <type>list</type>
+            <nodes>
+                <node id="node0.online.sberbank.ru">
+                    <extendedPermissionEnabled>true</extendedPermissionEnabled>
+                </node>
+                <node id="node1.online.sberbank.ru">
+                    <extendedPermissionEnabled>true</extendedPermissionEnabled>
+                </node>
+                <node id="node2.online.sberbank.ru">
+                    <extendedPermissionEnabled>true</extendedPermissionEnabled>
+                </node>
+                <node id="node3.online.sberbank.ru">
+                    <extendedPermissionEnabled>true</extendedPermissionEnabled>
+                </node>
+                <node id="node4.online.sberbank.ru">
+                    <extendedPermissionEnabled>true</extendedPermissionEnabled>
+                </node>
+                <node id="greenfield1.online.sberbank.ru">
+                    <extendedPermissionEnabled>true</extendedPermissionEnabled>
+                </node>
+                <node id="greenfield2.online.sberbank.ru">
+                    <extendedPermissionEnabled>true</extendedPermissionEnabled>
+                </node>
+            </nodes>
+        </param>
+        <param name="900Permissions" description="">
+            <type>list</type>
+            <pushAlertTimeInterval>2580000</pushAlertTimeInterval>
+            <efsMobileBank>true</efsMobileBank>
+            <nodes>
+                <node id="node0.online.sberbank.ru">
+                    <pushAlertEnabled>true</pushAlertEnabled>
+                </node>
+                <node id="node1.online.sberbank.ru">
+                    <pushAlertEnabled>true</pushAlertEnabled>
+                </node>
+                <node id="node2.online.sberbank.ru">
+                    <pushAlertEnabled>true</pushAlertEnabled>
+                </node>
+                <node id="node3.online.sberbank.ru">
+                    <pushAlertEnabled>true</pushAlertEnabled>
+                </node>
+                <node id="node4.online.sberbank.ru">
+                    <pushAlertEnabled>true</pushAlertEnabled>
+                </node>
+                <node id="greenfield1.online.sberbank.ru">
+                    <pushAlertEnabled>true</pushAlertEnabled>
+                    <efsMobileBank>true</efsMobileBank>
+                </node>
+                <node id="greenfield2.online.sberbank.ru">
+                    <pushAlertEnabled>true</pushAlertEnabled>
+                    <efsMobileBank>true</efsMobileBank>
+                </node>
+            </nodes>
+        </param>
+        <param name="tokenizationBINs" description="">
+            <type>list</type>
+            <enabled>true</enabled>
+            <BINsCollection>
+                <BINs paymentSystem="MasterCard">
+                    <BINrangeCollection>
+                        <BINrange start="531310" />
+                        <BINrange start="533205" />
+                        <BINrange start="533208" />
+                        <BINrange start="536961" />
+                        <BINrange start="533669" />
+                        <BINrange start="545152" />
+                        <BINrange start="546901" />
+                        <BINrange start="546902" end="546913" />
+                        <BINrange start="546916" end="546918" />
+                        <BINrange start="546920" />
+                        <BINrange start="546922" />
+                        <BINrange start="546925" end="546933" />
+                        <BINrange start="546935" />
+                        <BINrange start="546937" end="546956" />
+                        <BINrange start="546959" end="546964" />
+                        <BINrange start="546966" end="546970" />
+                        <BINrange start="546972" />
+                        <BINrange start="546974" end="546977" />
+                        <BINrange start="546998" end="546999" />
+                        <BINrange start="547927" />
+                        <BINrange start="548401" />
+                        <BINrange start="548402" end="548403" />
+                        <BINrange start="548405" end="548407" />
+                        <BINrange start="548410" end="548413" />
+                        <BINrange start="548416" />
+                        <BINrange start="548420" />
+                        <BINrange start="548422" />
+                        <BINrange start="548425" end="548428" />
+                        <BINrange start="548430" end="548432" />
+                        <BINrange start="548435" end="548436" />
+                        <BINrange start="548438" />
+                        <BINrange start="548440" />
+                        <BINrange start="548442" end="548445" />
+                        <BINrange start="548447" end="548452" />
+                        <BINrange start="548454" end="548456" />
+                        <BINrange start="548459" end="548464" />
+                        <BINrange start="548466" />
+                        <BINrange start="548468" end="548469" />
+                        <BINrange start="548470" />
+                        <BINrange start="548472" />
+                        <BINrange start="548476" end="548477" />
+                        <BINrange start="548498" end="548499" />
+                        <BINrange start="557000" />
+                    </BINrangeCollection>
+                </BINs>
+                <BINs paymentSystem="VISA">
+                    <BINrangeCollection>
+                        <BINrange start="417398" />
+                        <BINrange start="427417" />
+                        <BINrange start="427427" />
+                        <BINrange start="427432" />
+                        <BINrange start="427448" />
+                        <BINrange start="427601" end="427613" />
+                        <BINrange start="427616" end="427618" />
+                        <BINrange start="427620" />
+                        <BINrange start="427622" />
+                        <BINrange start="427625" end="427633" />
+                        <BINrange start="427635" end="427646" />
+                        <BINrange start="427648" end="427656" />
+                        <BINrange start="427659" end="427664" />
+                        <BINrange start="427666" end="427670" />
+                        <BINrange start="427672" />
+                        <BINrange start="427674" end="427677" />
+                        <BINrange start="427680" end="427687" />
+                        <BINrange start="427689" />
+                        <BINrange start="427699" />
+                        <BINrange start="427901" end="427913" />
+                        <BINrange start="427916" end="427918" />
+                        <BINrange start="427920" />
+                        <BINrange start="427922" />
+                        <BINrange start="427925" end="427933" />
+                        <BINrange start="427935" end="427946" />
+                        <BINrange start="427948" end="427956" />
+                        <BINrange start="427959" end="427964" />
+                        <BINrange start="427966" end="427970" />
+                        <BINrange start="427972" />
+                        <BINrange start="427974" end="427975" />
+                        <BINrange start="427977" />
+                        <BINrange start="427999" />
+                        <BINrange start="481776" />
+                        <BINrange start="481779" />
+                        <BINrange start="481781" />
+                        <BINrange start="483983" />
+                        <BINrange start="485463" />
+                    </BINrangeCollection>
+                </BINs>
+            </BINsCollection>
+        </param>
+        <param name="mastercard_tokenisation" description="">
+            <type>setting</type>
+            <enabled>true</enabled>
+        </param>
+        <param name="visa_tokenisation" description="">
+            <type>setting</type>
+            <enabled>true</enabled>
+        </param>
+        <param name="androidPay_tokenization" description="">
+            <type>setting</type>
+            <enabled>true</enabled>
+        </param>
+        <param name="samsungPay_tokenization" description="">
+            <type>setting</type>
+            <enabled>true</enabled>
+        </param>
+        <param name="nfcTokensManagement" description="Р Р€Р С—РЎР‚Р В°Р Р†Р В»Р ВµР Р…Р С‘Р Вµ Р В¶Р С‘Р В·Р Р…Р ВµР Р…Р Р…РЎвЂ№Р С˜ РЎвЂ Р С‘Р С”Р В»Р С∙Р С˜ РЎвЂљР С∙Р С”Р ВµР Р…Р В°">
+            <type>list</type>
+            <enabled>true</enabled>
+            <nfcTokensManagementVisa>true</nfcTokensManagementVisa>
+            <nfcTokensManagementMC>true</nfcTokensManagementMC>
+        </param>
+        <param name="signOnParams" description="Р СџР В°РЎР‚Р В°Р С˜РЎвЂљР ВµРЎР‚РЎвЂ№ РЎРѓРЎвЂљРЎР‚Р С‘Р С˜Р В° SignOn">
+            <type>list</type>
+            <androidPayClientDataTransferOffer>https://www.sberbank.ru/common/img/uploaded/files/pdf/androidpay_pdk.pdf</androidPayClientDataTransferOffer>
+            <androidPayAutocompleteChecked>false</androidPayAutocompleteChecked>
+            <nodes>
+                <node id="node0.online.sberbank.ru">
+                    <qrPayments>true</qrPayments>
+                    <qrP2P>false</qrP2P>
+                    <qrMerchantBinding>false</qrMerchantBinding>
+                    <androidPayClientDataAutoComplete>true</androidPayClientDataAutoComplete>
+                </node>
+                <node id="node1.online.sberbank.ru">
+                    <qrPayments>true</qrPayments>
+                    <qrP2P>false</qrP2P>
+                    <qrMerchantBinding>false</qrMerchantBinding>
+                    <androidPayClientDataAutoComplete>true</androidPayClientDataAutoComplete>
+                </node>
+                <node id="node2.online.sberbank.ru">
+                    <qrPayments>true</qrPayments>
+                    <qrP2P>false</qrP2P>
+                    <qrMerchantBinding>false</qrMerchantBinding>
+                    <androidPayClientDataAutoComplete>true</androidPayClientDataAutoComplete>
+                </node>
+                <node id="node3.online.sberbank.ru">
+                    <qrPayments>true</qrPayments>
+                    <qrP2P>false</qrP2P>
+                    <qrMerchantBinding>false</qrMerchantBinding>
+                    <androidPayClientDataAutoComplete>true</androidPayClientDataAutoComplete>
+                </node>
+                <node id="node4.online.sberbank.ru">
+                    <qrPayments>true</qrPayments>
+                    <qrP2P>false</qrP2P>
+                    <qrMerchantBinding>false</qrMerchantBinding>
+                    <androidPayClientDataAutoComplete>true</androidPayClientDataAutoComplete>
+                </node>
+                <node id="greenfield1.online.sberbank.ru">
+                    <qrPayments>true</qrPayments>
+                    <qrP2P>false</qrP2P>
+                    <qrMerchantBinding>false</qrMerchantBinding>
+                    <androidPayClientDataAutoComplete>true</androidPayClientDataAutoComplete>
+                </node>
+                <node id="greenfield2.online.sberbank.ru">
+                    <qrPayments>true</qrPayments>
+                    <qrP2P>false</qrP2P>
+                    <qrMerchantBinding>false</qrMerchantBinding>
+                    <androidPayClientDataAutoComplete>true</androidPayClientDataAutoComplete>
+                </node>
+            </nodes>
+        </param>
+        <param name="CardPushEnabled" description="">
+            <type>setting</type>
+            <enabled>true</enabled>
+        </param>
+        <param name="SelfRegistrationCSAmApi7_9up" description="Р вЂ™Р С”Р В»РЎР‹РЎвЂЎР ВµР Р…Р С‘Р Вµ mAPI Р Р…Р В° РЎРЊРЎвЂљР В°Р С—Р Вµ РЎРѓР В°Р С˜Р С∙РЎР‚Р ВµР С–Р С‘РЎРѓРЎвЂљРЎР‚Р В°РЎвЂ Р С‘Р С‘ Р Р† Р С˜Р С∙Р В±Р С‘Р В»РЎРЉР Р…Р С∙Р С˜ Р С—РЎР‚Р С‘Р В»Р С∙Р В¶Р ВµР Р…Р С‘Р С‘">
+            <type>setting</type>
+            <enabled>true</enabled>
+        </param>
+        <param name="EasyLogin" description="Р вЂ™Р С”Р В»РЎР‹РЎвЂЎР ВµР Р…Р С‘Р Вµ Р Р…Р С∙Р Р†РЎвЂ№РЎвЂ¦ Р С—РЎР‚Р В°Р Р†Р С‘Р В» РЎРѓР С∙Р В·Р Т‘Р В°Р Р…Р С‘РЎРЏ Р В»Р С∙Р С–Р С‘Р Р…Р В°">
+            <type>setting</type>
+            <enabled>false</enabled>
+        </param>
+        <param name="ExternalLogin" description="Р вЂ™Р С”Р В»РЎР‹РЎвЂЎР ВµР Р…Р С‘Р Вµ Р В°РЎС“РЎвЂљР ВµР Р…РЎвЂљР С‘РЎвЂћР С‘Р С”Р В°РЎвЂ Р С‘Р С‘ РЎвЂЎР ВµРЎР‚Р ВµР В· Р РЋР вЂ˜Р С›Р вЂє Р Р…Р В° Р Р†Р Р…Р ВµРЎв‚¬Р Р…Р С‘РЎвЂ¦ РЎР‚Р ВµРЎРѓРЎС“РЎР‚РЎРѓР В°РЎвЂ¦">
+            <type>setting</type>
+            <enabled>true</enabled>
+        </param>
+        <param name="PFMConfigFlags" description="Р вЂ˜Р В»Р С∙Р С”Р С‘ РЎР‚Р В°Р В±Р С∙РЎвЂљР В°РЎР‹РЎвЂљ Р С—Р С∙ Р В»Р С∙Р С–Р С‘РЎвЂЎР ВµРЎРѓР С”Р С∙Р С˜РЎС“ Р пїЅР вЂєР пїЅ">
+            <PfmGlobal/>
+            <PfmNodes>
+                <node id="node0.online.sberbank.ru">
+                    <currentPfmApiVersion>1.20</currentPfmApiVersion>
+                    <PFMUserParams>false</PFMUserParams>
+                    <pfmDataOnline>false</pfmDataOnline>
+                    <BudgetOnMyFinance>true</BudgetOnMyFinance>
+                    <ALFInHistory>true</ALFInHistory>
+                </node>
+                <node id="node1.online.sberbank.ru">
+                    <currentPfmApiVersion>1.20</currentPfmApiVersion>
+                    <PFMUserParams>true</PFMUserParams>
+                    <pfmDataOnline>false</pfmDataOnline>
+                    <BudgetOnMyFinance>true</BudgetOnMyFinance>
+                    <ALFInHistory>true</ALFInHistory>
+                </node>
+                <node id="node2.online.sberbank.ru">
+                    <currentPfmApiVersion>1.20</currentPfmApiVersion>
+                    <PFMUserParams>true</PFMUserParams>
+                    <pfmDataOnline>false</pfmDataOnline>
+                    <BudgetOnMyFinance>true</BudgetOnMyFinance>
+                    <ALFInHistory>true</ALFInHistory>
+                </node>
+                <node id="node3.online.sberbank.ru">
+                    <currentPfmApiVersion>1.20</currentPfmApiVersion>
+                    <PFMUserParams>true</PFMUserParams>
+                    <pfmDataOnline>false</pfmDataOnline>
+                    <BudgetOnMyFinance>true</BudgetOnMyFinance>
+                    <ALFInHistory>true</ALFInHistory>
+                </node>
+                <node id="node4.online.sberbank.ru">
+                    <currentPfmApiVersion>1.20</currentPfmApiVersion>
+                    <PFMUserParams>true</PFMUserParams>
+                    <pfmDataOnline>false</pfmDataOnline>
+                    <BudgetOnMyFinance>true</BudgetOnMyFinance>
+                    <ALFInHistory>true</ALFInHistory>
+                </node>
+                <node id="greenfield1.online.sberbank.ru">
+                    <currentPfmApiVersion>1.20</currentPfmApiVersion>
+                    <PFMUserParams>true</PFMUserParams>
+                    <pfmDataOnline>true</pfmDataOnline>
+                    <pfmApiVersion>1.30</pfmApiVersion>
+                    <minAppVersionFromPFMApiVersion>8.1.0</minAppVersionFromPFMApiVersion>
+                    <Budget3.0Enabled>true</Budget3.0Enabled>
+                    <BudgetOnMyFinance>true</BudgetOnMyFinance>
+                    <ALFInHistory>true</ALFInHistory>
+                </node>
+                <node id="greenfield2.online.sberbank.ru">
+                    <currentPfmApiVersion>1.20</currentPfmApiVersion>
+                    <PFMUserParams>true</PFMUserParams>
+                    <pfmDataOnline>true</pfmDataOnline>
+                    <pfmApiVersion>1.30</pfmApiVersion>
+                    <minAppVersionFromPFMApiVersion>8.1.0</minAppVersionFromPFMApiVersion>
+                    <Budget3.0Enabled>true</Budget3.0Enabled>
+                    <BudgetOnMyFinance>true</BudgetOnMyFinance>
+                    <ALFInHistory>true</ALFInHistory>
+                </node>
+            </PfmNodes>
+        </param>
+        <param name="map" description="Р  РЎС“Р В±Р С‘Р В»РЎРЉР Р…Р С‘Р С” Р Т‘Р В»РЎРЏ РЎРЏР Р…Р Т‘Р ВµР С”РЎРѓ Р С”Р В°РЎР‚РЎвЂљ">
+            <type>list</type>
+            <enabled>true</enabled>
+            <features>
+                <feature id="ATMs" enabled="true"/>
+                <feature id="partners" enabled="true"/>
+                <feature id="creditCard" enabled="true"/>
+                <feature id="oms" enabled="true"/>
+            </features>
+        </param>
+        <param name="Wallet" description="Р СџР С∙Р Т‘РЎРѓРЎвЂљР В°Р Р…Р С∙Р Р†Р С”Р В° Р вЂ™Р Р€ Р С—РЎР‚Р С‘ Р С∙Р С—Р В»Р В°РЎвЂљР Вµ">
+            <type>list</type>
+            <enabled>true</enabled>
+            <usescenario>true</usescenario>
+            <nodes>
+                <node id="node0.online.sberbank.ru" blockName="node0">
+                    <enabled>false</enabled>
+                </node>
+                <node id="node1.online.sberbank.ru" blockName="node1">
+                    <enabled>false</enabled>
+                </node>
+                <node id="node2.online.sberbank.ru" blockName="node2">
+                    <enabled>false</enabled>
+                </node>
+                <node id="node3.online.sberbank.ru" blockName="node3">
+                    <enabled>false</enabled>
+                </node>
+                <node id="node4.online.sberbank.ru" blockName="node4">
+                    <enabled>false</enabled>
+                </node>
+                <node id="greenfield1.online.sberbank.ru" blockName="greenfield1">
+                    <enabled>true</enabled>
+                </node>
+                <node id="greenfield2.online.sberbank.ru" blockName="greenfield2">
+                    <enabled>true</enabled>
+                </node>
+            </nodes>
+        </param>
+        <param name="MessengerPermissions" description="">
+            <type>list</type>
+            <authMessengerLogin>true</authMessengerLogin>
+            <nodes>
+                <node id="node0.online.sberbank.ru">
+                    <MessengerLogin>true</MessengerLogin>
+                    <MessengerP2P>true</MessengerP2P>
+                    <P2PNonUserMessenger>true</P2PNonUserMessenger>
+                    <p2pAuth>true</p2pAuth>
+                    <timeToRefreshUnread>1800</timeToRefreshUnread>
+                    <MessengerRemoveConversation>true</MessengerRemoveConversation>
+                    <MessengerEmoji>true</MessengerEmoji>
+                    <MessengerSuggestions>true</MessengerSuggestions>
+                    <MessengerOnlineSuggestions>true</MessengerOnlineSuggestions>
+                    <MessengerStickers>true</MessengerStickers>
+                    <Markdown>true</Markdown>
+                </node>
+                <node id="node1.online.sberbank.ru">
+                    <MessengerLogin>true</MessengerLogin>
+                    <MessengerP2P>true</MessengerP2P>
+                    <P2PNonUserMessenger>true</P2PNonUserMessenger>
+                    <p2pAuth>true</p2pAuth>
+                    <timeToRefreshUnread>1800</timeToRefreshUnread>
+                    <MessengerRemoveConversation>true</MessengerRemoveConversation>
+                    <MessengerEmoji>true</MessengerEmoji>
+                    <MessengerSuggestions>true</MessengerSuggestions>
+                    <MessengerOnlineSuggestions>true</MessengerOnlineSuggestions>
+                    <MessengerStickers>true</MessengerStickers>
+                    <Markdown>true</Markdown>
+                </node>
+                <node id="node2.online.sberbank.ru">
+                    <MessengerLogin>true</MessengerLogin>
+                    <MessengerP2P>true</MessengerP2P>
+                    <P2PNonUserMessenger>true</P2PNonUserMessenger>
+                    <p2pAuth>true</p2pAuth>
+                    <timeToRefreshUnread>1800</timeToRefreshUnread>
+                    <MessengerRemoveConversation>true</MessengerRemoveConversation>
+                    <MessengerEmoji>true</MessengerEmoji>
+                    <MessengerSuggestions>true</MessengerSuggestions>
+                    <MessengerOnlineSuggestions>true</MessengerOnlineSuggestions>
+                    <MessengerStickers>true</MessengerStickers>
+                    <Markdown>true</Markdown>
+                </node>
+                <node id="node3.online.sberbank.ru">
+                    <MessengerLogin>true</MessengerLogin>
+                    <MessengerP2P>true</MessengerP2P>
+                    <P2PNonUserMessenger>true</P2PNonUserMessenger>
+                    <p2pAuth>true</p2pAuth>
+                    <timeToRefreshUnread>1800</timeToRefreshUnread>
+                    <MessengerRemoveConversation>true</MessengerRemoveConversation>
+                    <MessengerEmoji>true</MessengerEmoji>
+                    <MessengerSuggestions>true</MessengerSuggestions>
+                    <MessengerOnlineSuggestions>true</MessengerOnlineSuggestions>
+                    <MessengerStickers>true</MessengerStickers>
+                    <Markdown>true</Markdown>
+                </node>
+                <node id="node4.online.sberbank.ru">
+                    <MessengerLogin>true</MessengerLogin>
+                    <MessengerP2P>true</MessengerP2P>
+                    <P2PNonUserMessenger>true</P2PNonUserMessenger>
+                    <p2pAuth>true</p2pAuth>
+                    <timeToRefreshUnread>1800</timeToRefreshUnread>
+                    <MessengerRemoveConversation>true</MessengerRemoveConversation>
+                    <MessengerEmoji>true</MessengerEmoji>
+                    <MessengerSuggestions>true</MessengerSuggestions>
+                    <MessengerOnlineSuggestions>true</MessengerOnlineSuggestions>
+                    <MessengerStickers>true</MessengerStickers>
+                    <Markdown>true</Markdown>
+                </node>
+                <node id="greenfield1.online.sberbank.ru">
+                    <MessengerLogin>true</MessengerLogin>
+                    <MessengerP2P>true</MessengerP2P>
+                    <P2PNonUserMessenger>true</P2PNonUserMessenger>
+                    <p2pAuth>true</p2pAuth>
+                    <timeToRefreshUnread>1800</timeToRefreshUnread>
+                    <MessengerRemoveConversation>true</MessengerRemoveConversation>
+                    <MessengerEmoji>true</MessengerEmoji>
+                    <MessengerSuggestions>true</MessengerSuggestions>
+                    <MessengerOnlineSuggestions>true</MessengerOnlineSuggestions>
+                    <MessengerStickers>true</MessengerStickers>
+                    <Markdown>true</Markdown>
+                </node>
+                <node id="greenfield2.online.sberbank.ru">
+                    <MessengerLogin>true</MessengerLogin>
+                    <MessengerP2P>true</MessengerP2P>
+                    <P2PNonUserMessenger>true</P2PNonUserMessenger>
+                    <p2pAuth>true</p2pAuth>
+                    <timeToRefreshUnread>1800</timeToRefreshUnread>
+                    <MessengerRemoveConversation>true</MessengerRemoveConversation>
+                    <MessengerEmoji>true</MessengerEmoji>
+                    <MessengerSuggestions>true</MessengerSuggestions>
+                    <MessengerOnlineSuggestions>true</MessengerOnlineSuggestions>
+                    <MessengerStickers>true</MessengerStickers>
+                    <Markdown>true</Markdown>
+                </node>
+            </nodes>
+        </param>
+        <param name="offers" description="Р СџРЎР‚Р ВµР Т‘Р В»Р С∙Р В¶Р ВµР Р…Р С‘РЎРЏ Р С—РЎР‚Р С∙Р Т‘РЎС“Р С”РЎвЂљР С∙Р Р† Р Р…Р В° Р Р†Р С‘РЎвЂљРЎР‚Р С‘Р Р…Р В°РЎвЂ¦ Р С—РЎР‚Р С∙Р Т‘Р В°Р В¶">
+            <type>list</type>
+            <enabled>true</enabled>
+            <nodes>
+                <node id="node0.online.sberbank.ru">
+                    <enabled>false</enabled>
+                    <successScreen>
+                        <limit>1</limit>
+                        <operation>
+                            <transferInternal>
+                                <enabled>true</enabled>
+                            </transferInternal>
+                        </operation>
+                    </successScreen>
+                </node>
+                <node id="node1.online.sberbank.ru">
+                    <enabled>true</enabled>
+                    <successScreen>
+                        <limit>1</limit>
+                        <operation>
+                            <transferInternal>
+                                <enabled>true</enabled>
+                            </transferInternal>
+                        </operation>
+                    </successScreen>
+                </node>
+                <node id="node2.online.sberbank.ru">
+                    <enabled>true</enabled>
+                    <successScreen>
+                        <limit>1</limit>
+                        <operation>
+                            <transferInternal>
+                                <enabled>true</enabled>
+                            </transferInternal>
+                        </operation>
+                    </successScreen>
+                </node>
+                <node id="node3.online.sberbank.ru">
+                   <enabled>true</enabled>
+                    <successScreen>
+                        <limit>1</limit>
+                        <operation>
+                            <transferInternal>
+                                <enabled>true</enabled>
+                            </transferInternal>
+                        </operation>
+                    </successScreen>
+                </node>
+                <node id="node4.online.sberbank.ru">
+                    <enabled>true</enabled>
+                    <successScreen>
+                        <limit>1</limit>
+                        <operation>
+                            <transferInternal>
+                                <enabled>true</enabled>
+                            </transferInternal>
+                        </operation>
+                    </successScreen>
+                </node>
+                <node id="greenfield1.online.sberbank.ru">
+                    <enabled>true</enabled>
+                    <successScreen>
+                        <limit>1</limit>
+                        <operation>
+                            <transferInternal>
+                                <enabled>true</enabled>
+                            </transferInternal>
+                        </operation>
+                    </successScreen>
+                </node>
+                <node id="greenfield2.online.sberbank.ru">
+                    <enabled>true</enabled>
+                    <successScreen>
+                        <limit>1</limit>
+                        <operation>
+                            <transferInternal>
+                                <enabled>true</enabled>
+                            </transferInternal>
+                        </operation>
+                    </successScreen>
+               </node>
+            </nodes>
+        </param>
+        <param name="offers_config" description="Р СџРЎР‚Р ВµР Т‘Р В»Р С∙Р В¶Р ВµР Р…Р С‘РЎРЏ Р С—РЎР‚Р С∙Р Т‘РЎС“Р С”РЎвЂљР С∙Р Р† Р Р…Р В° Р Р†Р С‘РЎвЂљРЎР‚Р С‘Р Р…Р В°РЎвЂ¦ Р С—РЎР‚Р С∙Р Т‘Р В°Р В¶">
+            <type>list</type>
+            <enabled>true</enabled>
+            <places>
+                <mainScreenSections>
+                    <credit>
+                        <limit>1</limit>
+                        <requestAfterClick>true</requestAfterClick>
+                    </credit>
+                </mainScreenSections>
+                <successScreen>
+                    <limit>1</limit>
+                    <server>PFM</server>
+                </successScreen>
+            </places>
+            <nodes>
+                <node id="node0.online.sberbank.ru">
+                    <abTestingSuccessScreenEnabled>false</abTestingSuccessScreenEnabled>
+                    <defaultDesignSuccessScreen>b</defaultDesignSuccessScreen>
+                </node>
+                <node id="node1.online.sberbank.ru">
+                    <abTestingSuccessScreenEnabled>false</abTestingSuccessScreenEnabled>
+                    <defaultDesignSuccessScreen>b</defaultDesignSuccessScreen>
+                </node>
+                <node id="node2.online.sberbank.ru">
+                    <abTestingSuccessScreenEnabled>false</abTestingSuccessScreenEnabled>
+                    <defaultDesignSuccessScreen>b</defaultDesignSuccessScreen>
+                </node>
+                <node id="node3.online.sberbank.ru">
+                    <abTestingSuccessScreenEnabled>false</abTestingSuccessScreenEnabled>
+                    <defaultDesignSuccessScreen>b</defaultDesignSuccessScreen>
+                </node>
+                <node id="node4.online.sberbank.ru">
+                    <abTestingSuccessScreenEnabled>false</abTestingSuccessScreenEnabled>
+                    <defaultDesignSuccessScreen>b</defaultDesignSuccessScreen>
+                </node>
+                <node id="greenfield1.online.sberbank.ru">
+                    <abTestingSuccessScreenEnabled>false</abTestingSuccessScreenEnabled>
+                    <defaultDesignSuccessScreen>b</defaultDesignSuccessScreen>
+                </node>
+                <node id="greenfield2.online.sberbank.ru">
+                    <abTestingSuccessScreenEnabled>false</abTestingSuccessScreenEnabled>
+                    <defaultDesignSuccessScreen>b</defaultDesignSuccessScreen>
+                </node>
+            </nodes>
+        </param>
+        <param name="TPNDataEnrichment" description="Р вЂ™Р С∙Р В·Р С˜Р С∙Р В¶Р Р…Р С∙РЎРѓРЎвЂљРЎРЉ Р С∙Р В±Р С∙Р С–Р В°РЎвЂ°Р ВµР Р…Р С‘РЎРЏ Р Т‘Р В°Р Р…Р Р…РЎвЂ№РЎвЂ¦ Р Т‘Р В»РЎРЏ Р СћР СџР Р€ Р Р…Р В° РЎР‚Р В°Р В·РЎР‚Р ВµРЎв‚¬Р ВµР Р…Р Р…РЎвЂ№РЎвЂ¦ Р Р…Р С∙Р Т‘Р В°РЎвЂ¦">
+            <type>setting</type>
+            <enabled>true</enabled>
+        </param>
+        <param name="NodeTPNDataEnrichment" description="Р вЂ™Р С∙Р В·Р С˜Р С∙Р В¶Р Р…Р С∙РЎРѓРЎвЂљРЎРЉ Р С∙Р В±Р С∙Р С–Р В°РЎвЂ°Р ВµР Р…Р С‘РЎРЏ Р Т‘Р В°Р Р…Р Р…РЎвЂ№РЎвЂ¦ Р Т‘Р В»РЎРЏ Р СћР СџР Р€ Р Р…Р В° РЎР‚Р В°Р В·Р Р…РЎвЂ№РЎвЂ¦ Р Р…Р С∙Р Т‘Р В°РЎвЂ¦">
+            <type>list</type>
+            <nodes>
+                <node id="greenfield1.online.sberbank.ru">
+                    <enabled>true</enabled>
+                </node>
+                <node id="node1.online.sberbank.ru">
+                    <enabled>true</enabled>
+                </node>
+                <node id="node2.online.sberbank.ru">
+                    <enabled>true</enabled>
+                </node>
+                <node id="node3.online.sberbank.ru">
+                    <enabled>true</enabled>
+                </node>
+                <node id="node4.online.sberbank.ru">
+                    <enabled>true</enabled>
+                </node>
+                <node id="greenfield2.online.sberbank.ru">
+                    <enabled>true</enabled>
+                </node>
+            </nodes>
+        </param>
+        <param name="StaticSourceMerchantPics" description="РЎРѓРЎвЂљР В°РЎвЂљРЎР‚Р ВµРЎРѓРЎС“РЎР‚РЎРѓ Р Т‘Р В»РЎРЏ Р В»Р С∙Р С–Р С∙РЎвЂљР С‘Р С—Р С∙Р Р†">
+            <type>source</type>
+            <link>https://pfm.stat.online.sberbank.ru/PFM/logos/</link>
+        </param>
+        <param name="DebitCardAppMP" description="Р вЂ”Р В°Р С”Р В°Р В· Р Т‘Р ВµР В±Р ВµРЎвЂљР С∙Р Р†РЎвЂ№РЎвЂ¦ Р С”Р В°РЎР‚РЎвЂљ">
+            <type>service</type>
+            <enabled>true</enabled>
+            <digitalcardshow>true</digitalcardshow>
+            <nodes>
+                <node id="node0.online.sberbank.ru">
+                    <enabled>false</enabled>
+                    <fatkashow>false</fatkashow>
+                    <ufsbranches>false</ufsbranches>
+                    <ufshistory>false</ufshistory>
+                    <digitalcardshow>false</digitalcardshow>
+                </node>
+                <node id="node1.online.sberbank.ru">
+                    <enabled>true</enabled>
+                    <fatkashow>false</fatkashow>
+                    <ufsbranches>true</ufsbranches>
+                    <ufshistory>true</ufshistory>
+                    <digitalcardshow>true</digitalcardshow>
+                </node>
+                <node id="node2.online.sberbank.ru">
+                    <enabled>true</enabled>
+                    <fatkashow>false</fatkashow>
+                    <ufsbranches>true</ufsbranches>
+                    <ufshistory>true</ufshistory>
+                    <digitalcardshow>true</digitalcardshow>
+               </node>
+                <node id="node3.online.sberbank.ru">
+                    <enabled>true</enabled>
+                    <fatkashow>false</fatkashow>
+                    <ufsbranches>true</ufsbranches>
+                    <ufshistory>true</ufshistory>
+                    <digitalcardshow>true</digitalcardshow>
+                </node>
+                <node id="node4.online.sberbank.ru">
+                    <enabled>true</enabled>
+                    <fatkashow>false</fatkashow>
+                    <ufsbranches>true</ufsbranches>
+                    <ufshistory>true</ufshistory>
+                    <digitalcardshow>true</digitalcardshow>
+                </node>
+                <node id="greenfield1.online.sberbank.ru">
+                    <enabled>true</enabled>
+                    <fatkashow>false</fatkashow>
+                    <ufsbranches>true</ufsbranches>
+                    <ufshistory>true</ufshistory>
+                    <digitalcardshow>true</digitalcardshow>
+                </node>
+                <node id="greenfield2.online.sberbank.ru">
+                    <enabled>true</enabled>
+                    <fatkashow>false</fatkashow>
+                    <ufsbranches>true</ufsbranches>
+                    <ufshistory>true</ufshistory>
+                    <digitalcardshow>true</digitalcardshow>
+                </node>
+            </nodes>
+        </param>
+        <param name="DigitalCardAppMP" description="Р вЂ”Р В°Р С”Р В°Р В· РЎвЂ Р С‘РЎвЂћРЎР‚Р С∙Р Р†РЎвЂ№РЎвЂ¦ Р С”Р В°РЎР‚РЎвЂљ">
+            <type>service</type>
+            <enabled>true</enabled>
+            <embossingtitle>Р пїЅР С˜РЎРЏ Р Р†Р В»Р В°Р Т‘Р ВµР В»РЎРЉРЎвЂ Р В°</embossingtitle>
+            <embossingvalue>DIGITAL CARD</embossingvalue>
+            <embossingdescription>Р РЎвЂљР С∙ Р С—Р С∙Р В»Р Вµ Р С˜Р С∙Р В¶Р ВµРЎвЂљ Р С—РЎР‚Р С‘Р С–Р С∙Р Т‘Р С‘РЎвЂљРЎРѓРЎРЏ Р Т‘Р В»РЎРЏ Р С∙Р С—Р В»Р В°РЎвЂљРЎвЂ№ Р Р† Р С‘Р Р…РЎвЂљР ВµРЎР‚Р Р…Р ВµРЎвЂљР Вµ</embossingdescription>
+            <nodes>
+                <node id="node0.online.sberbank.ru">
+                    <enabled>false</enabled>
+                    <fatkashow>false</fatkashow>
+                    <getcvv>false</getcvv>
+                    <ufshistory>false</ufshistory>
+                    <blocknotification>false</blocknotification>
+                    <embossingenabled>false</embossingenabled>
+                </node>
+                <node id="node1.online.sberbank.ru">
+                    <enabled>true</enabled>
+                    <fatkashow>false</fatkashow>
+                    <getcvv>true</getcvv>
+                    <ufshistory>true</ufshistory>
+                    <blocknotification>true</blocknotification>
+                    <embossingenabled>true</embossingenabled>
+                </node>
+                <node id="node2.online.sberbank.ru">
+                    <enabled>true</enabled>
+                    <fatkashow>false</fatkashow>
+                    <getcvv>true</getcvv>
+                    <ufshistory>true</ufshistory>
+                    <blocknotification>true</blocknotification>
+                    <embossingenabled>true</embossingenabled>
+                </node>
+                <node id="node3.online.sberbank.ru">
+                    <enabled>true</enabled>
+                    <fatkashow>false</fatkashow>
+                    <getcvv>true</getcvv>
+                    <ufshistory>true</ufshistory>
+                    <blocknotification>true</blocknotification>
+                    <embossingenabled>true</embossingenabled>
+                </node>
+                <node id="node4.online.sberbank.ru">
+                    <enabled>true</enabled>
+                    <fatkashow>false</fatkashow>
+                    <getcvv>true</getcvv>
+                    <ufshistory>true</ufshistory>
+                    <blocknotification>true</blocknotification>
+                    <embossingenabled>true</embossingenabled>
+                </node>
+                <node id="greenfield1.online.sberbank.ru">
+                    <enabled>true</enabled>
+                    <fatkashow>false</fatkashow>
+                    <getcvv>true</getcvv>
+                    <ufshistory>true</ufshistory>
+                    <blocknotification>true</blocknotification>
+                    <embossingenabled>true</embossingenabled>
+                </node>
+                <node id="greenfield2.online.sberbank.ru">
+                    <enabled>true</enabled>
+                    <fatkashow>false</fatkashow>
+                    <getcvv>true</getcvv>
+                    <ufshistory>true</ufshistory>
+                    <blocknotification>true</blocknotification>
+                    <embossingenabled>true</embossingenabled>
+                </node>
+            </nodes>
+        </param>
+        <param name="CardCVV" description="Р С›Р С—РЎР‚Р ВµР Т‘Р ВµР В»Р ВµР Р…Р С‘Р Вµ РЎвЂљР С‘Р С—Р С∙Р Р† Р С”Р В°РЎР‚РЎвЂљ Р Т‘Р В»РЎРЏ Р В·Р В°Р С—РЎР‚Р С∙РЎРѓР В° CVV">
+            <type>list</type>
+            <enabled>true</enabled>
+            <key>name</key>
+            <cardCvvList>
+                <cardCvv id="Visa Digital" />
+            </cardCvvList>
+        </param>
+        <param name="BlockingNotification" description="Р С™Р В°РЎР‚РЎвЂљРЎвЂ№ РЎРѓ Р Р†РЎвЂ№Р Р†Р С∙Р Т‘Р С∙Р С˜ Р Р…Р С∙РЎвЂљР С‘РЎвЂћР С‘Р С”Р В°РЎвЂ Р С‘Р С‘ Р С—РЎР‚Р С‘ Р В±Р В»Р С∙Р С”Р С‘РЎР‚Р С∙Р Р†Р С”Р Вµ">
+            <type>service</type>
+            <cardBlockList>
+                <cardBlock id="Visa Digital" />
+            </cardBlockList>
+            <notification>
+                <title>Р СџР ВµРЎР‚Р ВµР Р†Р ВµРЎРѓРЎвЂљР С‘ Р С∙РЎРѓРЎвЂљР В°РЎвЂљР С∙Р С” РЎРѓРЎР‚Р ВµР Т‘РЎРѓРЎвЂљР Р† Р С—Р ВµРЎР‚Р ВµР Т‘ Р В±Р В»Р С∙Р С”Р С‘РЎР‚Р С∙Р Р†Р С”Р С∙Р в„–?</title>
+                <description>Р  Р ВµР С”Р С∙Р С˜Р ВµР Р…Р Т‘РЎС“Р ВµР С˜ Р С—Р ВµРЎР‚Р ВµР Т‘ Р В±Р В»Р С∙Р С”Р С‘РЎР‚Р С∙Р Р†Р С”Р С∙Р в„– Р С”Р В°РЎР‚РЎвЂљРЎвЂ№ Р С—Р ВµРЎР‚Р ВµР Р†Р ВµРЎРѓРЎвЂљР С‘ Р С∙РЎРѓРЎвЂљР В°РЎвЂљР С∙Р С” РЎРѓРЎР‚Р ВµР Т‘РЎРѓРЎвЂљР Р† Р Р…Р В° Р Т‘РЎР‚РЎС“Р С–РЎС“РЎР‹ Р С”Р В°РЎР‚РЎвЂљРЎС“ Р С‘Р В»Р С‘ РЎРѓРЎвЂЎР ВµРЎвЂљ. Р СџР С∙РЎРѓР В»Р Вµ Р В±Р В»Р С∙Р С”Р С‘РЎР‚Р С∙Р Р†Р С”Р С‘ Р С”Р В°РЎР‚РЎвЂљРЎвЂ№ Р С—Р С∙Р В»РЎС“РЎвЂЎР С‘РЎвЂљРЎРЉ Р Т‘Р ВµР Р…Р ВµР В¶Р Р…РЎвЂ№Р Вµ РЎРѓРЎР‚Р ВµР Т‘РЎРѓРЎвЂљР Р†Р В° Р С˜Р С∙Р В¶Р Р…Р С∙ Р В±РЎС“Р Т‘Р ВµРЎвЂљ РЎвЂљР С∙Р В»РЎРЉР С”Р С∙ Р Р† Р С∙РЎвЂћР С‘РЎРѓР Вµ Р В±Р В°Р Р…Р С”Р В° Р С—РЎР‚Р С‘ Р С—РЎР‚Р ВµР Т‘РЎР‰РЎРЏР Р†Р В»Р ВµР Р…Р С‘Р С‘ Р Т‘Р С∙Р С”РЎС“Р С˜Р ВµР Р…РЎвЂљР В°, РЎС“Р Т‘Р С∙РЎРѓРЎвЂљР С∙Р Р†Р ВµРЎР‚РЎРЏРЎР‹РЎвЂ°Р ВµР С–Р С∙ Р В»Р С‘РЎвЂЎР Р…Р С∙РЎРѓРЎвЂљРЎРЉ</description>
+                <buttontextcontinue>Р СџРЎР‚Р С∙Р Т‘Р С∙Р В»Р В¶Р С‘РЎвЂљРЎРЉ</buttontextcontinue>
+                <buttontexttransfer>Р СџР ВµРЎР‚Р ВµР Р†Р ВµРЎРѓРЎвЂљР С‘</buttontexttransfer>
+            </notification>
+            <reasonList>
+                <reason id="other" />
+            </reasonList>
+        </param>
+        <param name="creditCardOrder" description="Р вЂ”Р В°Р С”Р В°Р В· Р С”РЎР‚Р ВµР Т‘Р С‘РЎвЂљР Р…Р С∙Р в„– Р С”Р В°РЎР‚РЎвЂљРЎвЂ№ Р Р† Р вЂўР В¤Р РЋ">
+            <type>service</type>
+            <enabled>true</enabled>
+        </param>
+        <param name="creditCardOrderV2" description="Р вЂ”Р В°Р С”Р В°Р В· Р С”РЎР‚Р ВµР Т‘Р С‘РЎвЂљР Р…Р С∙Р в„– Р С”Р В°РЎР‚РЎвЂљРЎвЂ№ Р Р† Р вЂўР В¤Р РЋ, Р Р†Р ВµРЎР‚РЎРѓР С‘РЎРЏ  2">
+            <type>service</type>
+            <enabled>true</enabled>
+        </param>
+        <param name="creditCardUfsHistory" description="Р С›РЎвЂљР С∙Р В±РЎР‚Р В°Р В¶Р ВµР Р…Р С‘Р Вµ Р С—Р С∙Р Т‘РЎР‚Р С∙Р В±Р Р…Р С∙РЎРѓРЎвЂљР ВµР в„– Р С—Р С∙ Р В·Р В°Р С”Р В°Р В·РЎС“ Р С”РЎР‚Р ВµР Т‘Р С‘РЎвЂљР Р…Р С∙Р в„– Р С”Р В°РЎР‚РЎвЂљРЎвЂ№ Р вЂўР В¤Р РЋ Р Р† Р пїЅР С›">
+            <type>service</type>
+            <enabled>true</enabled>
+        </param>
+        <param name="creditCardOrderServices" description="Р СџР В°РЎР‚Р В°Р С˜Р ВµРЎвЂљРЎР‚РЎвЂ№ РЎРѓР ВµРЎР‚Р Р†Р С‘РЎРѓР С∙Р Р† РЎвЂћРЎС“Р Р…Р С”РЎвЂ Р С‘Р С∙Р Р…Р В°Р В»Р В° Р В·Р В°Р С”Р В°Р В·Р В° Р С”РЎР‚Р ВµР Т‘Р С‘РЎвЂљР Р…Р С∙Р в„– Р С”Р В°РЎР‚РЎвЂљРЎвЂ№ Р Р† Р вЂўР В¤Р РЋ">
+            <type>list</type>
+            <enabled>true</enabled>
+            <services>
+                <service name="persDataAgreement" description="Р СџР С∙Р В»РЎС“РЎвЂЎР ВµР Р…Р С‘Р Вµ РЎвЂљР ВµР С”РЎРѓРЎвЂљР В° РЎС“РЎРѓР В»Р С∙Р Р†Р С‘Р в„– Р С∙Р В±РЎР‚Р В°Р В±Р С∙РЎвЂљР С”Р С‘ Р С—Р ВµРЎР‚РЎРѓР С∙Р Р…Р В°Р В»РЎРЉР Р…РЎвЂ№РЎвЂ¦ Р Т‘Р В°Р Р…Р Р…РЎвЂ№РЎвЂ¦">
+                    <host>https://pfl.efs.sigma.sbrf.ru:443</host>
+                    <path>/credit-cards/short-form-capacity/v1/mobile/banking/product/ccard/short-ccard-request/getTextOfAgreementOnTransferInfo</path>
+                </service>
+            </services>
+        </param>
+        <param name="digitalCreditCustomers" description="Р  РЎС“Р В±Р С‘Р В»РЎРЉР Р…Р С‘Р С” РЎвЂљР С‘РЎР‚Р В°Р В¶Р С‘РЎР‚Р С∙Р Р†Р В°Р Р…Р С‘РЎРЏ Р С—Р С∙РЎвЂљРЎР‚Р ВµР В± Р С”РЎР‚Р ВµР Т‘Р С‘РЎвЂљР С∙Р Р†">
+            <type>list</type>
+            <enabled>true</enabled>
+            <nodes>
+                <node id="greenfield1.online.sberbank.ru">
+                    <loanRequest_8.0>true</loanRequest_8.0>
+                    <loanRequest>
+                        <version id="8.2">
+                            <enabled>true</enabled>
+                        </version>
+                        <version id="8.3">
+                            <enabled>true</enabled>
+                        </version>
+                    </loanRequest>
+                </node>
+            </nodes>
+        </param>
+        <param name="digitalCreditServices" description="Р СџР В°РЎР‚Р В°Р С˜Р ВµРЎвЂљРЎР‚РЎвЂ№ Р С—РЎР‚Р С∙РЎвЂ Р ВµРЎРѓРЎРѓР С∙Р Р† Р С—Р С∙РЎвЂљРЎР‚Р ВµР В± Р С”РЎР‚Р ВµР Т‘Р С‘РЎвЂљР С∙Р Р†Р В°Р Р…Р С‘РЎРЏ">
+            <type>list</type>
+            <enabled>true</enabled>
+            <services>
+                <service name="ufs.consumer.loan.v1" description="Р С’Р Т‘РЎР‚Р ВµРЎРѓ Р Т‘Р С‘РЎРѓРЎвЂљРЎР‚Р С‘Р В±РЎС“РЎвЂљР С‘Р Р†Р В° Р С—РЎР‚Р С∙РЎвЂ Р ВµРЎРѓРЎРѓР В° Р Р…Р В° Р В±РЎРЊР С”Р Вµ">
+                    <host />
+                    <path>consumer-loan/v2/mobile/banking/products/loans/consumerloan/request</path>
+                </service>
+                <service name="PersData" description="URL РЎРѓР С∙Р С–Р В»Р В°РЎв‚¬Р ВµР Р…Р С‘РЎРЏ Р С∙Р В± Р С∙Р В±РЎР‚Р В°Р В±Р С∙РЎвЂљР С”Р Вµ Р СџР вЂќР Р… 7.10">
+                    <host>https://pfl.efs.sigma.sbrf.ru</host>
+                    <path>consumer-loan/v2/mobile/banking/products/loans/consumerloan/GetConfirmationAgreement/</path>
+                </service>
+            </services>
+        </param>
+        <param name="CoreAddress" description="Р СџР В°РЎР‚Р В°Р С˜Р ВµРЎвЂљРЎР‚РЎвЂ№ Р Р†Р С‘Р Т‘Р В¶Р ВµРЎвЂљР В° kladr">
+            <type>service</type>
+            <enabled>true</enabled>
+            <services>
+                <service name="ufs.kladr.v1">
+                    <host>https://pfl.efs.sigma.sbrf.ru</host>
+                    <path>/loan-suggestion/services/rest/v2/SBOL/Suggestions.KLADR</path>
+                </service>
+            </services>
+        </param>
+        <param name="Confirmation" description="Р СљР С∙Р Т‘РЎС“Р В»РЎРЉ Р С—Р С∙Р Т‘РЎвЂљР Р†Р ВµРЎР‚Р В¶Р Т‘Р ВµР Р…Р С‘РЎРЏ">
+            <type>list</type>
+            <enabled>true</enabled>
+            <widgetPacks>
+                <pack id="1">
+                    <enabled>true</enabled>
+                </pack>
+                <pack id="2">
+                    <enabled>true</enabled>
+                </pack>
+            </widgetPacks>
+        </param>
+        <param name="welfareProducts" description="Р СџРЎР‚Р С∙Р Т‘РЎС“Р С”РЎвЂљРЎвЂ№ Р В±Р В»Р В°Р С–Р С∙РЎРѓР С∙РЎРѓРЎвЂљР С∙РЎРЏР Р…Р С‘РЎРЏ">
+            <type>list</type>
+            <enabled>true</enabled>
+            <nodes>
+                <node id="greenfield1.online.sberbank.ru">
+                    <InsuranceEnabled>true</InsuranceEnabled>
+                    <PensionEnabled>false</PensionEnabled>
+                    <PensionEnabled_2.0>false</PensionEnabled_2.0>
+                </node>
+                <node id="node0.online.sberbank.ru">
+                    <InsuranceEnabled>true</InsuranceEnabled>
+                </node>
+                <node id="node1.online.sberbank.ru">
+                    <InsuranceEnabled>true</InsuranceEnabled>
+                </node>
+                <node id="node2.online.sberbank.ru">
+                    <InsuranceEnabled>true</InsuranceEnabled>
+                </node>
+                <node id="node3.online.sberbank.ru">
+                    <InsuranceEnabled>true</InsuranceEnabled>
+                </node>
+                <node id="node4.online.sberbank.ru">
+                    <InsuranceEnabled>true</InsuranceEnabled>
+                </node>
+            </nodes>
+        </param>
+        <param name="UfsInsuranceOther" description="Р С›РЎвЂљР С∙Р В±РЎР‚Р В°Р В¶Р ВµР Р…Р С‘Р Вµ РЎР‚Р В°Р В·Р Т‘Р ВµР В»Р В° Р РЋРЎвЂљРЎР‚Р В°РЎвЂ¦Р С∙Р Р†Р В°Р Р…Р С‘Р Вµ Р Р† Р СџРЎР‚Р С∙РЎвЂЎР ВµР Вµ Р С—Р С∙РЎРѓР В»Р Вµ РЎР‚Р ВµР В»Р С‘Р В·Р В° 8.3 Р Р†Р С”Р В»РЎР‹РЎвЂЎР С‘РЎвЂљР ВµР В»РЎРЉР Р…Р С∙">
+            <type>setting</type>
+            <enabled>true</enabled>
+        </param>
+        <param name="WelfareProductsMainScreenV2" description="Р СџРЎР‚Р С∙Р Т‘РЎС“Р С”РЎвЂљРЎвЂ№ Р В±Р В»Р В°Р С–Р С∙РЎРѓР С∙РЎРѓРЎвЂљР С∙РЎРЏР Р…Р С‘РЎРЏ Р Р…Р В° Р С–Р В»Р В°Р Р†Р Р…Р С∙Р С˜ РЎРЊР С”РЎР‚Р В°Р Р…Р Вµ">
+            <type>setting</type>
+            <enabled>false</enabled>
+        </param>
+        <param name="WelfareProductsDetailsV2" description="Р С™Р В°РЎР‚РЎвЂљР С∙РЎвЂЎР С”Р С‘ Р С—РЎР‚Р С∙Р Т‘РЎС“Р С”РЎвЂљР С∙Р Р† Р В±Р В»Р В°Р С–Р С∙РЎРѓР С∙РЎРѓРЎвЂљР С∙РЎРЏР Р…Р С‘РЎРЏ (Р Т‘Р ВµРЎвЂљР В°Р В»Р С‘Р В·Р В°РЎвЂ Р С‘РЎРЏ Р С—РЎР‚Р С∙Р Т‘РЎС“Р С”РЎвЂљР В°)">
+            <type>setting</type>
+            <enabled>false</enabled>
+        </param>
+        <param name="WelfareTutorialV2" description="Р СћРЎС“РЎвЂљР С∙РЎР‚Р С‘Р В°Р В» Р Р…Р В° РЎвЂћР С‘РЎвЂЎРЎС“">
+            <type>setting</type>
+            <enabled>false</enabled>
+        </param>
+        <param name="WelfareProductsMainScreenV3" description="Р СџРЎР‚Р С∙Р Т‘РЎС“Р С”РЎвЂљРЎвЂ№ Р В±Р В»Р В°Р С–Р С∙РЎРѓР С∙РЎРѓРЎвЂљР С∙РЎРЏР Р…Р С‘РЎРЏ Р Р…Р В° Р С–Р В»Р В°Р Р†Р Р…Р С∙Р С˜ РЎРЊР С”РЎР‚Р В°Р Р…Р Вµ">
+            <type>setting</type>
+            <enabled>true</enabled>
+        </param>
+        <param name="WelfareProductsDetailsV3" description="Р С™Р В°РЎР‚РЎвЂљР С∙РЎвЂЎР С”Р С‘ Р С—РЎР‚Р С∙Р Т‘РЎС“Р С”РЎвЂљР С∙Р Р† Р В±Р В»Р В°Р С–Р С∙РЎРѓР С∙РЎРѓРЎвЂљР С∙РЎРЏР Р…Р С‘РЎРЏ (Р Т‘Р ВµРЎвЂљР В°Р В»Р С‘Р В·Р В°РЎвЂ Р С‘РЎРЏ Р С—РЎР‚Р С∙Р Т‘РЎС“Р С”РЎвЂљР В°)">
+            <type>setting</type>
+            <enabled>true</enabled>
+        </param>
+        <param name="WelfareTutorialV3" description="Р СћРЎС“РЎвЂљР С∙РЎР‚Р С‘Р В°Р В» Р Р…Р В° РЎвЂћР С‘РЎвЂЎРЎС“">
+            <type>setting</type>
+            <enabled>false</enabled>
+        </param>
+        <param name="WelfareLegacyContracts" description="Р вЂ™Р С”Р В»РЎР‹РЎвЂЎР ВµР Р…Р С‘Р Вµ РЎвЂћРЎС“Р Р…Р С”РЎвЂ Р С‘Р С∙Р Р…Р В°Р В»Р В° Р С—Р ВµРЎР‚Р Р†Р С∙Р в„– Р Р†Р ВµРЎР‚РЎРѓР С‘Р С‘ РЎРѓР ВµРЎР‚Р Р†Р С‘РЎРѓР В° ContractList">
+            <type>setting</type>
+            <enabled>true</enabled>
+        </param>
+        <param name="brokerage" description="Р вЂ˜РЎР‚Р С∙Р С”Р ВµРЎР‚РЎРѓР С”Р С∙Р Вµ Р С∙Р В±РЎРѓР В»РЎС“Р В¶Р С‘Р Р†Р В°Р Р…Р С‘Р Вµ">
+            <enabled>true</enabled>
+            <replenishAccountEnabled>true</replenishAccountEnabled>
+            <replenishAccountInMarginCallEnabled>true</replenishAccountInMarginCallEnabled>
+            <replenishAccountSearchString>Р СџР С∙Р С—Р С∙Р В»Р Р…Р ВµР Р…Р С‘Р Вµ Р В±РЎР‚Р С∙Р С”Р ВµРЎР‚РЎРѓР С”Р С∙Р С–Р С∙ РЎРѓРЎвЂЎР ВµРЎвЂљР В°</replenishAccountSearchString>
+            <replenishAccountAgreementFieldCode>field(S226884898113A226884895980)</replenishAccountAgreementFieldCode>
+            <replenishAccountMarketFieldCode>field(S226884898113A226884895336)</replenishAccountMarketFieldCode>
+            <createDocApplicationEnabled>true</createDocApplicationEnabled>
+            <brokerageHelpPhoneNumber>900</brokerageHelpPhoneNumber>
+            <markets>
+                <market id="0">
+                    <enabled>true</enabled>
+                </market>
+                <market id="1">
+                    <enabled>true</enabled>
+                </market>
+                <market id="2">
+                    <enabled>false</enabled>
+                </market>
+            </markets>
+        </param>
+        <param name="UiCaseGibddPenaltySearch" description="Р Р€Р Р…Р С‘Р С”Р В°Р В»РЎРЉР Р…РЎвЂ№Р в„– Р С—Р С∙Р В»РЎРЉР В·Р С∙Р Р†Р В°РЎвЂљР ВµР В»РЎРЉРЎРѓР С”Р С‘Р в„– РЎРѓРЎвЂ Р ВµР Р…Р В°РЎР‚Р С‘Р в„– Р Т‘Р В»РЎРЏ Р С—Р С∙Р С‘РЎРѓР С”Р В° РЎв‚¬РЎвЂљРЎР‚Р В°РЎвЂћР С∙Р Р† Р С—Р С∙ Р вЂ™Р Р€/Р РЋР СћР РЋ">
+            <type>list</type>
+            <nodes>
+                <node id="node0.online.sberbank.ru">
+                    <enabled>true</enabled>
+                    <serviceID>500204117</serviceID>
+                    <targetService>500414395</targetService>
+                    <targetBilling>284</targetBilling>
+                    <targetProvider>500414395</targetProvider>
+                </node>
+                <node id="node1.online.sberbank.ru">
+                    <enabled>true</enabled>
+                    <serviceID>387491</serviceID>
+                    <targetService>596879</targetService>
+                    <targetBilling>284</targetBilling>
+                    <targetProvider>596879</targetProvider>
+                </node>
+                <node id="node2.online.sberbank.ru">
+                    <enabled>true</enabled>
+                    <serviceID>500204565</serviceID>
+                    <targetService>500413943</targetService>
+                    <targetBilling>284</targetBilling>
+                    <targetProvider>500413943</targetProvider>
+                </node>
+                <node id="node3.online.sberbank.ru">
+                    <enabled>true</enabled>
+                    <serviceID>500202753</serviceID>
+                    <targetService>500413146</targetService>
+                    <targetBilling>284</targetBilling>
+                    <targetProvider>500413146</targetProvider>
+                </node>
+                <node id="node4.online.sberbank.ru">
+                    <enabled>true</enabled>
+                    <serviceID>500202753</serviceID>
+                    <targetService>550445849</targetService>
+                    <targetBilling>284</targetBilling>
+                    <targetProvider>550445849</targetProvider>
+                </node>
+                <node id="greenfield1.online.sberbank.ru">
+                    <enabled>true</enabled>
+                    <serviceID>500202753</serviceID>
+                    <targetService>550445849</targetService>
+                    <targetBilling>284</targetBilling>
+                    <targetProvider>550445849</targetProvider>
+                </node>
+                <node id="greenfield2.online.sberbank.ru">
+                    <enabled>true</enabled>
+                    <serviceID>500202753</serviceID>
+                    <targetService>550445849</targetService>
+                    <targetBilling>284</targetBilling>
+                    <targetProvider>550445849</targetProvider>
+                </node>
+            </nodes>
+        </param>
+        <param name="UiCaseGibddPenaltyPayByUin" description="Р Р€Р Р…Р С‘Р С”Р В°Р В»РЎРЉР Р…РЎвЂ№Р в„– Р С—Р С∙Р В»РЎРЉР В·Р С∙Р Р†Р В°РЎвЂљР ВµР В»РЎРЉРЎРѓР С”Р С‘Р в„– РЎРѓРЎвЂ Р ВµР Р…Р В°РЎР‚Р С‘Р в„– Р Т‘Р В»РЎРЏ Р С∙Р С—Р В»Р В°РЎвЂљРЎвЂ№ РЎв‚¬РЎвЂљРЎР‚Р В°РЎвЂћР С∙Р Р† Р С—Р С∙ Р Р€Р пїЅР Сњ">
+            <type>list</type>
+            <nodes>
+                <node id="node0.online.sberbank.ru">
+                    <enabled>false</enabled>
+                    <serviceID>500204118</serviceID>
+                    <targetService>500414394</targetService>
+                    <targetBilling>284</targetBilling>
+                    <targetProvider>500414394</targetProvider>
+                </node>
+                <node id="node1.online.sberbank.ru">
+                    <enabled>false</enabled>
+                    <serviceID>387492</serviceID>
+                    <targetService>596878</targetService>
+                    <targetBilling>284</targetBilling>
+                    <targetProvider>596878</targetProvider>
+                </node>
+                <node id="node2.online.sberbank.ru">
+                    <enabled>false</enabled>
+                    <serviceID>500204566</serviceID>
+                    <targetService>500413942</targetService>
+                    <targetBilling>284</targetBilling>
+                    <targetProvider>500413942</targetProvider>
+                </node>
+                <node id="node3.online.sberbank.ru">
+                    <enabled>false</enabled>
+                    <serviceID>500202754</serviceID>
+                    <targetService>500413145</targetService>
+                    <targetBilling>284</targetBilling>
+                    <targetProvider>500413145</targetProvider>
+                </node>
+                <node id="node4.online.sberbank.ru">
+                    <enabled>false</enabled>
+                    <serviceID>500202754</serviceID>
+                    <targetService>550445848</targetService>
+                    <targetBilling>284</targetBilling>
+                    <targetProvider>550445848</targetProvider>
+                </node>
+                <node id="greenfield1.online.sberbank.ru">
+                    <enabled>false</enabled>
+                    <serviceID>500202754</serviceID>
+                    <targetService>550445848</targetService>
+                    <targetBilling>284</targetBilling>
+                    <targetProvider>550445848</targetProvider>
+                </node>
+                <node id="greenfield2.online.sberbank.ru">
+                    <enabled>false</enabled>
+                    <serviceID>500202754</serviceID>
+                    <targetService>550445848</targetService>
+                    <targetBilling>284</targetBilling>
+                    <targetProvider>550445848</targetProvider>
+                </node>
+            </nodes>
+        </param>
+        <param name="SberChat" description="Р вЂќР С‘Р В°Р В»Р С∙Р С– РЎРѓ Р С”Р С∙Р Р…РЎвЂљР В°Р С”РЎвЂљР С∙Р С˜ Р РЋР В±Р ВµРЎР‚Р В±Р В°Р Р…Р С”(900)">
+            <type>list</type>
+            <enabled>true</enabled>
+            <nodes>
+                <node id="node0.online.sberbank.ru">
+                    <dialog900>true</dialog900>
+                </node>
+                <node id="node1.online.sberbank.ru">
+                    <dialog900>true</dialog900>
+                </node>
+                <node id="node2.online.sberbank.ru">
+                    <dialog900>true</dialog900>
+                </node>
+                <node id="node3.online.sberbank.ru">
+                    <dialog900>true</dialog900>
+                </node>
+                <node id="node4.online.sberbank.ru">
+                    <dialog900>true</dialog900>
+                </node>
+                <node id="greenfield1.online.sberbank.ru">
+                    <dialog900>true</dialog900>
+                </node>
+                <node id="greenfield2.online.sberbank.ru">
+                    <dialog900>true</dialog900>
+                </node>
+            </nodes>
+        </param>
+        <param name="VOTCH" description="Р В¤РЎС“Р Р…Р С”РЎвЂ Р С‘Р С‘ РЎвЂЎР В°РЎвЂљР В° РЎРѓ Р С∙Р С—Р ВµРЎР‚Р В°РЎвЂљР С∙РЎР‚Р С∙Р С˜">
+           <type>list</type>
+            <enabled>true</enabled>
+            <nodes>
+                <node id="node0.online.sberbank.ru">
+                    <enabled>true</enabled>
+                </node>
+                <node id="node1.online.sberbank.ru">
+                    <enabled>true</enabled>
+                </node>
+                <node id="node2.online.sberbank.ru">
+                    <enabled>true</enabled>
+                </node>
+                <node id="node3.online.sberbank.ru">
+                    <enabled>true</enabled>
+                </node>
+                <node id="node4.online.sberbank.ru">
+                    <enabled>true</enabled>
+                </node>
+                <node id="greenfield1.online.sberbank.ru">
+                    <enabled>true</enabled>
+                </node>
+                <node id="greenfield2.online.sberbank.ru">
+                    <enabled>true</enabled>
+                </node>
+            </nodes>
+        </param>
+        <param name="SberChatTutorial" description="Р СћРЎС“РЎвЂљР С∙РЎР‚Р С‘Р В°Р В» Р Т‘Р В»РЎРЏ Р Т‘Р С‘Р В°Р В»Р С∙Р С–Р В° РЎРѓР С∙ Р РЋР В±Р ВµРЎР‚Р В±Р В°Р Р…Р С”Р С∙Р С˜(900)">
+            <type>list</type>
+            <enabled>true</enabled>
+            <showTutorial>true</showTutorial>
+        </param>
+        <param name="VOIPCallOperator" description="Р вЂ”Р Р†Р С∙Р Р…Р С∙Р С” Р С∙Р С—Р ВµРЎР‚Р В°РЎвЂљР С∙РЎР‚РЎС“ РЎвЂЎР ВµРЎР‚Р ВµР В· Р С‘Р Р…РЎвЂљР ВµРЎР‚Р Р…Р ВµРЎвЂљ">
+            <type>list</type>
+            <enabled>true</enabled>
+            <nodes>
+                <node id="greenfield1.online.sberbank.ru">
+                    <enabledNotAuthenticated>true</enabledNotAuthenticated>
+                    <enabledSideBar>true</enabledSideBar>
+                    <enabledInClientManager>true</enabledInClientManager>
+                    <enabledInSberChatProfile>true</enabledInSberChatProfile>
+                    <sessionHandlingEnabled>true</sessionHandlingEnabled>
+                    <tutorialIpCallEnabled>true</tutorialIpCallEnabled>
+                </node>
+            </nodes>
+        </param>
+        <param name="pushListAlternativeDesign" description="Р вЂ™Р С∙Р В·Р С˜Р С∙Р В¶Р Р…Р С∙РЎРѓРЎвЂљРЎРЉ Р С∙РЎвЂљР С∙Р В±РЎР‚Р В°Р В¶Р ВµР Р…Р С‘РЎРЏ Р В°Р В»РЎРЉРЎвЂљР ВµРЎР‚Р Р…Р В°РЎвЂљР С‘Р Р†Р Р…Р С∙Р С–Р С∙ Р Р†Р В°РЎР‚Р С‘Р В°Р Р…РЎвЂљР В° Р В»Р ВµР Р…РЎвЂљРЎвЂ№ РЎС“Р Р†Р ВµР Т‘Р С∙Р С˜Р В»Р ВµР Р…Р С‘Р в„–">
+            <type>setting</type>
+            <enabled>true</enabled>
+        </param>
+        <param name="nodePushListAlternativeDesign" description="Р вЂ™Р С∙Р В·Р С˜Р С∙Р В¶Р Р…Р С∙РЎРѓРЎвЂљРЎРЉ Р В°Р В»РЎРЉРЎвЂљР ВµРЎР‚Р Р…Р В°РЎвЂљР С‘Р Р†Р Р…Р С∙Р С–Р С∙ Р Р†Р В°РЎР‚Р С‘Р В°Р Р…РЎвЂљР В° Р В»Р ВµР Р…РЎвЂљРЎвЂ№ РЎС“Р Р†Р ВµР Т‘Р С∙Р С˜Р В»Р ВµР Р…Р С‘Р в„– Р Р…Р В° РЎР‚Р В°Р В·Р Р…РЎвЂ№РЎвЂ¦ Р Р…Р С∙Р Т‘Р В°РЎвЂ¦">
+            <type>list</type>
+            <nodes>
+                <node id="greenfield1.online.sberbank.ru">
+                    <enabled>true</enabled>
+                </node>
+                <node id="node1.online.sberbank.ru">
+                    <enabled>true</enabled>
+                </node>
+                <node id="node2.online.sberbank.ru">
+                    <enabled>true</enabled>
+                </node>
+                <node id="node3.online.sberbank.ru">
+                    <enabled>true</enabled>
+                </node>
+                <node id="node4.online.sberbank.ru">
+                    <enabled>true</enabled>
+                </node>
+                <node id="greenfield2.online.sberbank.ru">
+                    <enabled>true</enabled>
+                </node>
+            </nodes>
+        </param>
+        <param name="cuteChequeDetails" description="Р вЂ™Р С∙Р В·Р С˜Р С∙Р В¶Р Р…Р С∙РЎРѓРЎвЂљРЎРЉ Р С∙РЎвЂљР С∙Р В±РЎР‚Р В°Р В¶Р ВµР Р…Р С‘РЎРЏ Р Т‘Р ВµРЎвЂљР В°Р В»Р С‘Р В·Р С‘РЎР‚Р С∙Р Р†Р В°Р Р…Р Р…Р С∙Р С–Р С∙ Р С”РЎР‚Р В°РЎРѓР С‘Р Р†Р С∙Р С–Р С∙ РЎвЂЎР ВµР С”Р В° Р Т‘Р В»РЎРЏ Р СћР СџР Р€">
+            <type>setting</type>
+            <enabled>true</enabled>
+        </param>
+        <param name="nodeCuteChequeDetails" description="Р вЂ™Р С∙Р В·Р С˜Р С∙Р В¶Р Р…Р С∙РЎРѓРЎвЂљРЎРЉ Р С∙РЎвЂљР С∙Р В±РЎР‚Р В°Р В¶Р ВµР Р…Р С‘РЎРЏ Р Т‘Р ВµРЎвЂљР В°Р В»Р С‘Р В·Р С‘РЎР‚Р С∙Р Р†Р В°Р Р…Р Р…Р С∙Р С–Р С∙ Р С”РЎР‚Р В°РЎРѓР С‘Р Р†Р С∙Р С–Р С∙ РЎвЂЎР ВµР С”Р В° Р Т‘Р В»РЎРЏ Р СћР СџР Р€ Р Р…Р В° РЎР‚Р В°Р В·Р Р…РЎвЂ№РЎвЂ¦ Р Р…Р С∙Р Т‘Р В°РЎвЂ¦">
+            <type>list</type>
+            <nodes>
+                <node id="greenfield1.online.sberbank.ru">
+                    <enabled>true</enabled>
+                </node>
+                <node id="node1.online.sberbank.ru">
+                    <enabled>true</enabled>
+                </node>
+                <node id="node2.online.sberbank.ru">
+                    <enabled>true</enabled>
+                </node>
+                <node id="node3.online.sberbank.ru">
+                    <enabled>true</enabled>
+                </node>
+                <node id="node4.online.sberbank.ru">
+                    <enabled>true</enabled>
+                </node>
+                <node id="greenfield2.online.sberbank.ru">
+                    <enabled>true</enabled>
+                </node>
+            </nodes>
+        </param>
+        <param name="doNotShowPushTutorialForApiLevels" description="Р вЂ”Р В°Р С—РЎР‚Р ВµРЎвЂљ Р С∙РЎвЂљР С∙Р В±РЎР‚Р В°Р В¶Р ВµР Р…Р С‘РЎРЏ РЎвЂљРЎС“РЎвЂљР С∙РЎР‚Р С‘Р В°Р В»Р В° Р ВµРЎРѓР В»Р С‘ РЎС“РЎРѓРЎвЂљРЎР‚Р С∙Р в„–РЎРѓРЎвЂљР Р†Р С∙ Р С‘Р В· РЎвЂЎР ВµРЎР‚Р Р…Р С∙Р С–Р С∙ РЎРѓР С—Р С‘РЎРѓР С”Р В°">
+            <type>list</type>
+            <enabled>true</enabled>
+            <APIsCollection>
+                <API level="23" />
+                <API level="22" />
+                <API level="21" />
+                <API level="19" />
+                <API level="18" />
+                <API level="17" />
+                <API level="16" />
+                <API level="15" />
+                <API level="14" />
+            </APIsCollection>
+        </param>
+        <param name="nodeDoNotShowPushTutorialForApiLevels" description="Р вЂ”Р В°Р С—РЎР‚Р ВµРЎвЂљ Р С∙РЎвЂљР С∙Р В±РЎР‚Р В°Р В¶Р ВµР Р…Р С‘РЎРЏ РЎвЂљРЎС“РЎвЂљР С∙РЎР‚Р С‘Р В°Р В»Р В° Р Т‘Р В»РЎРЏ РЎС“РЎРѓРЎвЂљРЎР‚Р С∙Р в„–РЎРѓРЎвЂљР Р† Р Р†РЎвЂ¦Р С∙Р Т‘РЎРЏРЎвЂ°Р С‘РЎвЂ¦ Р Р† РЎвЂЎР ВµРЎР‚Р Р…РЎвЂ№Р в„– РЎРѓР С—Р С‘РЎРѓР С∙Р С” Р Р…Р В° РЎР‚Р В°Р В·Р Р…РЎвЂ№РЎвЂ¦ Р Р…Р С∙Р Т‘Р В°РЎвЂ¦">
+            <type>list</type>
+            <nodes>
+                <node id="greenfield1.online.sberbank.ru">
+                    <enabled>true</enabled>
+                </node>
+                <node id="node1.online.sberbank.ru">
+                    <enabled>true</enabled>
+                </node>
+                <node id="node2.online.sberbank.ru">
+                    <enabled>true</enabled>
+                </node>
+                <node id="node3.online.sberbank.ru">
+                    <enabled>true</enabled>
+                </node>
+                <node id="node4.online.sberbank.ru">
+                    <enabled>true</enabled>
+                </node>
+                <node id="greenfield2.online.sberbank.ru">
+                    <enabled>true</enabled>
+                </node>
+            </nodes>
+        </param>
+        <param name="TxPushSuggestion" description="">
+            <type>setting</type>
+            <enabled>true</enabled>
+            <periodInDays>21</periodInDays>
+            <number>2</number>
+            <delayInHours>72</delayInHours>
+        </param>
+        <param name="AlertMessage_7_11_3" description="Р пїЅР Р…РЎвЂћР С∙РЎР‚Р С˜Р В°РЎвЂ Р С‘Р С∙Р Р…Р Р…РЎвЂ№Р в„– Р В±Р В°Р Р…Р Р…Р ВµРЎР‚ Р Р…Р В° Р вЂњР В»Р В°Р Р†Р Р…Р С∙Р С˜ РЎРЊР С”РЎР‚Р В°Р Р…Р Вµ">
+            <enabled>true</enabled>
+            <importantInfo>
+                <messageType>message</messageType>
+                <startDate>09.05.2018 00:00:00 +0300</startDate>
+                <endDate>09.05.2018 23:59:59 +0300</endDate>
+                <colorTitle>#ffb74e</colorTitle>
+                <colorShortText>#FFFBF6</colorShortText>
+                <colorText>#000000</colorText>
+                <title>Р РЋ Р вЂќР Р…Р ВµР С˜ Р вЂ™Р ВµР В»Р С‘Р С”Р С∙Р в„– Р СџР С∙Р В±Р ВµР Т‘РЎвЂ№</title>
+                <shortText>Р вЂњР ВµРЎР‚Р С∙Р С‘ Р В¶Р С‘Р Р†РЎвЂ№, Р С—Р С∙Р С”Р В° Р В¶Р С‘Р Р†Р В° Р Р…Р В°РЎв‚¬Р В° Р С—Р В°Р С˜РЎРЏРЎвЂљРЎРЉ Р С∙ Р Р…Р С‘РЎвЂ¦.</shortText>
+                <longText>9 Р С˜Р В°РЎРЏ Р С˜РЎвЂ№ Р В±РЎС“Р Т‘Р ВµР С˜ Р Р†РЎРѓР С—Р С∙Р С˜Р С‘Р Р…Р В°РЎвЂљРЎРЉ Р С∙ Р Р†Р ВµР В»Р С‘Р С”Р С∙Р С˜ Р С—Р С∙Р Т‘Р Р†Р С‘Р С–Р Вµ Р Р…Р В°РЎв‚¬Р ВµР С–Р С∙ Р Р…Р В°РЎР‚Р С∙Р Т‘Р В°, Р С∙ РЎРѓР С‘Р В»Р Вµ Р Т‘РЎС“РЎвЂ¦Р В° Р С‘ Р В»РЎР‹Р В±Р Р†Р С‘ Р С” Р  Р С∙Р Т‘Р С‘Р Р…Р Вµ. Р РЋР С—Р ВµРЎвЂ Р С‘Р В°Р В»РЎРЉР Р…Р С∙ Р С” Р вЂќР Р…РЎР‹ Р СџР С∙Р В±Р ВµР Т‘РЎвЂ№ Р С˜РЎвЂ№ Р С—Р С∙Р Т‘Р С–Р С∙РЎвЂљР С∙Р Р†Р С‘Р В»Р С‘ Р С—Р С∙Р В·Р Т‘РЎР‚Р В°Р Р†Р С‘РЎвЂљР ВµР В»РЎРЉР Р…РЎвЂ№Р в„– Р Р†Р С‘Р Т‘Р ВµР С∙РЎР‚Р С∙Р В»Р С‘Р С” Р Т‘Р В»РЎРЏ Р Р†Р В°РЎРѓ. Р СџР С∙РЎРѓР С˜Р С∙РЎвЂљРЎР‚Р ВµРЎвЂљРЎРЉ Р Р…Р В° РЎРѓР В°Р в„–РЎвЂљР Вµ [www.sberbank.ru](http://www.sberbank.ru/9may_2018)</longText>
+                <buttonName>Р СџР С∙Р Т‘РЎР‚Р С∙Р В±Р Р…Р ВµР Вµ</buttonName>
+            </importantInfo>
+        </param>
+        <param name="P2PTransferByPhoneToOtherBank" description="Р СџР ВµРЎР‚Р ВµР Р†Р С∙Р Т‘ Р Р† Р Т‘РЎР‚РЎС“Р С–Р С‘Р Вµ Р В±Р В°Р Р…Р С”Р С‘ Р С—Р С∙ Р Р…Р С∙Р С˜Р ВµРЎР‚РЎС“ РЎвЂљР ВµР В»Р ВµРЎвЂћР С∙Р Р…Р В° РЎвЂЎР ВµРЎР‚Р ВµР В· Р Р€Р Р С™">
+            <type>list</type>
+            <enabled>true</enabled>
+            <serviceProviders>
+                <serviceProvider name="Tinkoff" visibleName="Р СћР С‘Р Р…РЎРЉР С”Р С∙РЎвЂћРЎвЂћ Р вЂ˜Р В°Р Р…Р С”">
+                    <nodes>
+                        <node id="greenfield1.online.sberbank.ru">
+                            <targetBilling>284</targetBilling>
+                            <targetProvider>550478249</targetProvider>
+                            <targetService>550478249</targetService>
+                        </node>
+                        <node id="greenfield2.online.sberbank.ru">
+                            <targetBilling>284</targetBilling>
+                            <targetProvider>500439915</targetProvider>
+                            <targetService>500439915</targetService>
+                        </node>
+                        <node id="node0.online.sberbank.ru">
+                            <targetBilling>284</targetBilling>
+                            <targetProvider>500446773</targetProvider>
+                            <targetService>500446773</targetService>
+                        </node>
+                        <node id="node1.online.sberbank.ru">
+                            <targetBilling>284</targetBilling>
+                            <targetProvider>629175</targetProvider>
+                            <targetService>629175</targetService>
+                        </node>
+                        <node id="node2.online.sberbank.ru">
+                            <targetBilling>284</targetBilling>
+                            <targetProvider>500446239</targetProvider>
+                            <targetService>500446239</targetService>
+                        </node>
+                        <node id="node3.online.sberbank.ru">
+                            <targetBilling>284</targetBilling>
+                            <targetProvider>500445546</targetProvider>
+                            <targetService>500445546</targetService>
+                        </node>
+                        <node id="node4.online.sberbank.ru">
+                            <targetBilling>284</targetBilling>
+                            <targetProvider>500439915</targetProvider>
+                            <targetService>500439915</targetService>
+                        </node>
+                    </nodes>
+                </serviceProvider>
+            </serviceProviders>
+        </param>
+        <param name="PersonalDataProfile" description="Р  Р ВµР Т‘Р В°Р С”РЎвЂљР С‘РЎР‚Р С∙Р Р†Р В°Р Р…Р С‘Р Вµ/Р Т‘Р С∙Р В±Р В°Р Р†Р В»Р ВµР Р…Р С‘Р Вµ Р С—Р ВµРЎР‚РЎРѓР С∙Р Р…Р В°Р В»РЎРЉР Р…РЎвЂ№РЎвЂ¦ Р Т‘Р В°Р Р…Р Р…РЎвЂ№РЎвЂ¦ Р С”Р В»Р С‘Р ВµР Р…РЎвЂљР В°">
+            <type>list</type>
+            <enabled>true</enabled>
+            <nodes>
+                <node id="greenfield1.online.sberbank.ru">
+                    <enabled>true</enabled>
+                    <EmailProfile>true</EmailProfile>
+                    <PhoneNumberProfile>true</PhoneNumberProfile>
+                    <InnProfile>true</InnProfile>
+                    <SnilsProfile>true</SnilsProfile>
+                </node>
+                <node id="greenfield2.online.sberbank.ru">
+                    <enabled>true</enabled>
+                    <EmailProfile>true</EmailProfile>
+                    <PhoneNumberProfile>true</PhoneNumberProfile>
+                    <InnProfile>true</InnProfile>
+                    <SnilsProfile>true</SnilsProfile>
+                </node>
+            </nodes>
+        </param>
+        <param name="StatementsAndReferences" description="Р РЋР С—РЎР‚Р В°Р Р†Р С”Р С‘ Р С‘ Р Р†РЎвЂ№Р С—Р С‘РЎРѓР С”Р С‘ c v8.1 Р С‘ Р В±Р С∙Р В»Р ВµР Вµ">
+            <type>list</type>
+            <enabled>true</enabled>
+            <nodes>
+                <node id="greenfield1.online.sberbank.ru">
+                    <enabled>true</enabled>
+                    <statementsHistory>true</statementsHistory>
+                </node>
+                <node id="node0.online.sberbank.ru">
+                    <enabled>false</enabled>
+                    <statementsHistory>false</statementsHistory>
+                </node>
+                <node id="node1.online.sberbank.ru">
+                    <enabled>false</enabled>
+                    <statementsHistory>false</statementsHistory>
+                </node>
+                <node id="node2.online.sberbank.ru">
+                    <enabled>false</enabled>
+                    <statementsHistory>false</statementsHistory>
+                </node>
+                <node id="node3.online.sberbank.ru">
+                    <enabled>false</enabled>
+                    <statementsHistory>false</statementsHistory>
+                </node>
+                <node id="node4.online.sberbank.ru">
+                    <enabled>false</enabled>
+                    <statementsHistory>false</statementsHistory>
+                </node>
+                <node id="greenfield2.online.sberbank.ru">
+                    <enabled>false</enabled>
+                    <statementsHistory>false</statementsHistory>
+                </node>
+            </nodes>
+        </param>
+        <param name="HistoryOperation" description="Р вЂ™Р С”Р В»Р В°Р Т‘Р С”Р В° Р пїЅРЎРѓРЎвЂљР С∙РЎР‚Р С‘РЎРЏ. Р вЂ˜Р В»Р С∙Р С”Р С‘ РЎР‚Р В°Р В±Р С∙РЎвЂљР В°РЎР‹РЎвЂљ Р С—Р С∙ Р В»Р С∙Р С–Р С‘РЎвЂЎР ВµРЎРѓР С”Р С∙Р С˜РЎС“ Р пїЅР вЂєР пїЅ">
+            <type>list</type>
+            <enabled>true</enabled>
+            <nodes>
+                <node id="node0.online.sberbank.ru">
+                    <historyRouterEnabled>false</historyRouterEnabled>
+                    <OmniChannelHistory>false</OmniChannelHistory>
+                    <externalOperationForm>false</externalOperationForm>
+                    <historyRefactoredList>false</historyRefactoredList>
+                    <tagAll>false</tagAll>
+                    <showHistorySearch>false</showHistorySearch>
+                    <historyProductEnabled>false</historyProductEnabled>
+                </node>
+                <node id="node1.online.sberbank.ru">
+                    <historyRouterEnabled>true</historyRouterEnabled>
+                    <OmniChannelHistory>true</OmniChannelHistory>
+                    <externalOperationForm>true</externalOperationForm>
+                    <historyRefactoredList>true</historyRefactoredList>
+                    <tagAll>true</tagAll>
+                    <showHistorySearch>false</showHistorySearch>
+                    <historyProductEnabled>false</historyProductEnabled>
+                </node>
+                <node id="node2.online.sberbank.ru">
+                    <historyRouterEnabled>true</historyRouterEnabled>
+                    <OmniChannelHistory>true</OmniChannelHistory>
+                    <externalOperationForm>true</externalOperationForm>
+                    <historyRefactoredList>true</historyRefactoredList>
+                    <tagAll>true</tagAll>
+                    <showHistorySearch>false</showHistorySearch>
+                    <historyProductEnabled>false</historyProductEnabled>
+                </node>
+                <node id="node3.online.sberbank.ru">
+                    <historyRouterEnabled>true</historyRouterEnabled>
+                    <OmniChannelHistory>true</OmniChannelHistory>
+                    <externalOperationForm>true</externalOperationForm>
+                    <historyRefactoredList>true</historyRefactoredList>
+                    <tagAll>true</tagAll>
+                    <showHistorySearch>false</showHistorySearch>
+                    <historyProductEnabled>false</historyProductEnabled>
+                </node>
+                <node id="node4.online.sberbank.ru">
+                    <historyRouterEnabled>true</historyRouterEnabled>
+                    <OmniChannelHistory>true</OmniChannelHistory>
+                    <externalOperationForm>true</externalOperationForm>
+                    <historyRefactoredList>true</historyRefactoredList>
+                    <tagAll>true</tagAll>
+                    <showHistorySearch>true</showHistorySearch>
+                    <historyProductEnabled>true</historyProductEnabled>
+                </node>
+                <node id="greenfield1.online.sberbank.ru">
+                    <historyRouterEnabled>true</historyRouterEnabled>
+                    <OmniChannelHistory>true</OmniChannelHistory>
+                    <externalOperationForm>true</externalOperationForm>
+                    <historyRefactoredList>true</historyRefactoredList>
+                    <tagAll>true</tagAll>
+                    <showHistorySearch>true</showHistorySearch>
+                    <historyProductEnabled>true</historyProductEnabled>
+                </node>
+                <node id="greenfield2.online.sberbank.ru">
+                    <historyRouterEnabled>true</historyRouterEnabled>
+                    <OmniChannelHistory>true</OmniChannelHistory>
+                    <externalOperationForm>true</externalOperationForm>
+                    <historyRefactoredList>true</historyRefactoredList>
+                    <tagAll>true</tagAll>
+                    <showHistorySearch>true</showHistorySearch>
+                    <historyProductEnabled>true</historyProductEnabled>
+                </node>
+            </nodes>
+        </param>
+        <param name="MobileBankSettings" description="Р СњР В°РЎРѓРЎвЂљРЎР‚Р С∙Р в„–Р С”Р С‘ Р Т‘Р В»РЎРЏ Р С—Р С∙Р Т‘Р С”Р В»РЎР‹РЎвЂЎР ВµР Р…Р С‘РЎРЏ Р СљР вЂ˜ Р Р† Р СљР Сџ">
+            <type>list</type>
+            <nodes>
+                <node id="greenfield1.online.sberbank.ru">
+                    <mobileBankFromSettings>true</mobileBankFromSettings>
+                    <efsMobileBank82>true</efsMobileBank82>
+                    <targetTapToActivationMobileBank>true</targetTapToActivationMobileBank>
+                    <showNotificationWS>true</showNotificationWS>
+                </node>
+                <node id="greenfield2.online.sberbank.ru">
+                    <efsMobileBank82>true</efsMobileBank82>
+                    <targetTapToActivationMobileBank>true</targetTapToActivationMobileBank>
+                </node>
+                <node id="node0.online.sberbank.ru">
+                    <efsMobileBank82>true</efsMobileBank82>
+                    <targetTapToActivationMobileBank>true</targetTapToActivationMobileBank>
+                </node>
+                <node id="node1.online.sberbank.ru">
+                    <efsMobileBank82>true</efsMobileBank82>
+                    <targetTapToActivationMobileBank>true</targetTapToActivationMobileBank>
+                </node>
+                <node id="node2.online.sberbank.ru">
+                    <efsMobileBank82>true</efsMobileBank82>
+                    <targetTapToActivationMobileBank>true</targetTapToActivationMobileBank>
+                </node>
+                <node id="node3.online.sberbank.ru">
+                    <efsMobileBank82>true</efsMobileBank82>
+                    <targetTapToActivationMobileBank>true</targetTapToActivationMobileBank>
+                </node>
+                <node id="node4.online.sberbank.ru">
+                    <efsMobileBank82>true</efsMobileBank82>
+                    <targetTapToActivationMobileBank>true</targetTapToActivationMobileBank>
+                </node>
+            </nodes>
+        </param>
+        <param name="PushPermissions" description="Р С™Р С∙Р Р…РЎРѓР С∙Р В»Р С‘Р Т‘Р С‘РЎР‚Р С∙Р Р†Р В°Р Р…Р Р…РЎвЂ№Р Вµ Р Р†Р С”Р В»РЎР‹РЎвЂЎР В°РЎвЂљР ВµР В»Р С‘ Р Т‘Р В»РЎРЏ РЎвЂћРЎС“Р Р…Р С”РЎвЂ Р С‘Р С∙Р Р…Р В°Р В»Р В° Р С”Р С∙Р С˜Р В°Р Р…Р Т‘РЎвЂ№ Push">
+            <type>list</type>
+            <nodes>
+                <node id="greenfield1.online.sberbank.ru">
+                    <autoTurnOffOperationPush>true</autoTurnOffOperationPush>
+                    <alternativePushSettingTexts>true</alternativePushSettingTexts>
+                    <updateTokenForegroundService>true</updateTokenForegroundService>
+                    <showCuteChequeWithoutMerchantName>true</showCuteChequeWithoutMerchantName>
+                </node>
+                <node id="greenfield2.online.sberbank.ru">
+                    <autoTurnOffOperationPush>true</autoTurnOffOperationPush>
+                    <updateTokenForegroundService>true</updateTokenForegroundService>
+                    <showCuteChequeWithoutMerchantName>true</showCuteChequeWithoutMerchantName>
+                </node>
+                <node id="node0.online.sberbank.ru">
+                    <autoTurnOffOperationPush>true</autoTurnOffOperationPush>
+                    <updateTokenForegroundService>true</updateTokenForegroundService>
+                    <showCuteChequeWithoutMerchantName>true</showCuteChequeWithoutMerchantName>
+                </node>
+                <node id="node1.online.sberbank.ru">
+                   <autoTurnOffOperationPush>true</autoTurnOffOperationPush>
+                    <updateTokenForegroundService>true</updateTokenForegroundService>
+                    <showCuteChequeWithoutMerchantName>true</showCuteChequeWithoutMerchantName>
+                </node>
+                <node id="node2.online.sberbank.ru">
+                    <autoTurnOffOperationPush>true</autoTurnOffOperationPush>
+                    <updateTokenForegroundService>true</updateTokenForegroundService>
+                    <showCuteChequeWithoutMerchantName>true</showCuteChequeWithoutMerchantName>
+                </node>
+                <node id="node3.online.sberbank.ru">
+                    <autoTurnOffOperationPush>true</autoTurnOffOperationPush>
+                    <updateTokenForegroundService>true</updateTokenForegroundService>
+                    <showCuteChequeWithoutMerchantName>true</showCuteChequeWithoutMerchantName>
+                </node>
+                <node id="node4.online.sberbank.ru">
+                    <autoTurnOffOperationPush>true</autoTurnOffOperationPush>
+                    <updateTokenForegroundService>true</updateTokenForegroundService>
+                    <showCuteChequeWithoutMerchantName>true</showCuteChequeWithoutMerchantName>
+                </node>
+            </nodes>
+        </param>
+        <param name="UsePushAutoDisable" description="Р В°Р В»Р С–Р С∙РЎР‚Р С‘РЎвЂљР С˜ Р В°Р Р†РЎвЂљР С∙Р С∙РЎвЂљР С”Р В»РЎР‹РЎвЂЎР ВµР Р…Р С‘РЎРЏ push">
+            <type>setting</type>
+            <enabled>true</enabled>
+        </param>
+        <param name="collect_statistics" description="">
+            <type>setting</type>
+            <enabled>true</enabled>
+        </param>
+        <param name="DDAPermissions" description="Р С™Р С∙Р Р…РЎРѓР С∙Р В»Р С‘Р Т‘Р С‘РЎР‚Р С∙Р Р†Р В°Р Р…Р Р…РЎвЂ№Р Вµ Р Р†Р С”Р В»РЎР‹РЎвЂЎР В°РЎвЂљР ВµР В»Р С‘ РЎвЂћРЎС“Р Р…Р С”РЎвЂ Р С‘Р С∙Р Р…Р В°Р В»Р В° Data Driven App">
+            <type>list</type>
+            <enabled>true</enabled>
+            <DdaNodes>
+               <node id="node0.online.sberbank.ru">
+                    <SmartSearch>false</SmartSearch>
+                </node>
+                <node id="node1.online.sberbank.ru">
+                    <SmartSearch>false</SmartSearch>
+                </node>
+                <node id="node2.online.sberbank.ru">
+                    <SmartSearch>false</SmartSearch>
+                </node>
+                <node id="node3.online.sberbank.ru">
+                    <SmartSearch>false</SmartSearch>
+                </node>
+                <node id="node4.online.sberbank.ru">
+                    <SmartSearch>false</SmartSearch>
+                </node>
+                <node id="greenfield1.online.sberbank.ru">
+                    <SmartSearch>true</SmartSearch>
+                </node>
+            </DdaNodes>
+        </param>
+        <param name="Loyalty" description="Р СџРЎР‚Р С∙Р С–РЎР‚Р В°Р С˜Р С˜Р В° Р В»Р С∙РЎРЏР В»РЎРЉР Р…Р С∙РЎРѓРЎвЂљР С‘ Р’В«Р РЋР С—Р В°РЎРѓР С‘Р В±Р С∙ Р С∙РЎвЂљ Р РЋР В±Р ВµРЎР‚Р В±Р В°Р Р…Р С”Р В°Р’В»">
+            <type>list</type>
+            <enabled>true</enabled>
+            <nodes>
+                <node id="node0.online.sberbank.ru">
+                    <bonusBalance>true</bonusBalance>
+                    <dashboard>true</dashboard>
+                </node>
+                <node id="node1.online.sberbank.ru">
+                    <bonusBalance>true</bonusBalance>
+                    <dashboard>true</dashboard>
+                </node>
+                <node id="node2.online.sberbank.ru">
+                    <bonusBalance>true</bonusBalance>
+                    <dashboard>true</dashboard>
+                </node>
+                <node id="node3.online.sberbank.ru">
+                    <bonusBalance>true</bonusBalance>
+                    <dashboard>true</dashboard>
+                </node>
+                <node id="node4.online.sberbank.ru">
+                    <bonusBalance>true</bonusBalance>
+                    <dashboard>true</dashboard>
+                </node>
+                <node id="greenfield1.online.sberbank.ru">
+                    <bonusBalance>true</bonusBalance>
+                    <dashboard>true</dashboard>
+                </node>
+            </nodes>
+        </param>
+        <param name="MAppDebitCardNegativeBalance" description="Р СџР С∙РЎвЂЎР ВµР С˜РЎС“ Р С˜Р С‘Р Р…РЎС“РЎРѓ Р Р…Р В° Р Т‘Р ВµР В±Р ВµРЎвЂљР С∙Р Р†Р С∙Р в„– Р С”Р В°РЎР‚РЎвЂљР Вµ">
+            <type>service</type>
+            <enabled>false</enabled>
+            <nodes>
+                <node id="node0.online.sberbank.ru">
+                    <enabled>false</enabled>
+                </node>
+                <node id="node1.online.sberbank.ru">
+                    <enabled>false</enabled>
+                </node>
+                <node id="node2.online.sberbank.ru">
+                    <enabled>false</enabled>
+                </node>
+                <node id="node3.online.sberbank.ru">
+                    <enabled>false</enabled>
+                </node>
+                <node id="node4.online.sberbank.ru">
+                    <enabled>true</enabled>
+                </node>
+                <node id="greenfield1.online.sberbank.ru">
+                    <enabled>true</enabled>
+                </node>
+                <node id="greenfield2.online.sberbank.ru">
+                    <enabled>true</enabled>
+                </node>
+            </nodes>
+        </param>
+    </params>
+</configuration>
