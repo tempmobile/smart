@@ -62,7 +62,7 @@
                 <node id="ift-node2.testonline.sberbank.ru">
                     <paymentService>true</paymentService>
                     <debtService>true</debtService>
-                    <paymentsServiceTutorial>true</paymentsServiceTutorial>
+                    <paymentsServiceTutorial>false</paymentsServiceTutorial>
                     <debtServiceTutorial>true</debtServiceTutorial>
                 </node>
             
@@ -75,7 +75,7 @@
                 <node id="ift-node2-mp.testonline.sberbank.ru">
                     <paymentService>true</paymentService>
                     <debtService>true</debtService>
-                    <paymentsServiceTutorial>true</paymentsServiceTutorial>
+                    <paymentsServiceTutorial>false</paymentsServiceTutorial>
                     <debtServiceTutorial>true</debtServiceTutorial>
                 </node>
                 
