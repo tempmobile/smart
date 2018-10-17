@@ -5688,7 +5688,7 @@
 	  </param>
       <param name="RecommendedPayments" description="Êàðòî÷êà ïîñòàâùèêà óñëóã">
             <type>list</type>
-            <enabled>false</enabled>
+            <enabled>true</enabled>
             <nodes>
                 <node id="node0.online.sberbank.ru">
                     <paymentService>false</paymentService>
