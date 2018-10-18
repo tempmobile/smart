@@ -5736,7 +5736,7 @@
 					<paymentService>true</paymentService>
                     <debtService>true</debtService>
                     <paymentsServiceTutorial>true</paymentsServiceTutorial>
-                    <debtServiceTutorial>true</debtServiceTutorial>
+                    <debtServiceTutorial>false</debtServiceTutorial>
 				</node>
 				<node id="ift-node1-mp.testonline.sberbank.ru">
 					<paymentService>true</paymentService>
@@ -5748,7 +5748,7 @@
 					<paymentService>true</paymentService>
                     <debtService>true</debtService>
                     <paymentsServiceTutorial>true</paymentsServiceTutorial>
-                    <debtServiceTutorial>true</debtServiceTutorial>
+                    <debtServiceTutorial>false</debtServiceTutorial>
 				</node>
 				<node id="psinode2.testonline.sberbank.ru">
 					<paymentService>true</paymentService>
