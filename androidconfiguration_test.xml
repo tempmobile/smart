@@ -5721,10 +5721,10 @@
                     <debtServiceTutorial>false</debtServiceTutorial>
                 </node>
                 <node id="mobile.sberbank.ru">
-                    <paymentService>false</paymentService>
-                    <debtService>false</debtService>
-                    <paymentsServiceTutorial>false</paymentsServiceTutorial>
-                    <debtServiceTutorial>false</debtServiceTutorial>
+                    <paymentService>true</paymentService>
+                    <debtService>true</debtService>
+                    <paymentsServiceTutorial>true</paymentsServiceTutorial>
+                    <debtServiceTutorial>true</debtServiceTutorial>
                 </node>
                 <node id="ift-node1.testonline.sberbank.ru">
 					<paymentService>true</paymentService>
