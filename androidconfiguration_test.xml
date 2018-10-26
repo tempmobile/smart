@@ -5757,10 +5757,10 @@
                     <debtServiceTutorial>true</debtServiceTutorial>
 				</node>
 				<node id="psinode1.testonline.sberbank.ru">
-					<paymentService>true</paymentService>
-                    <debtService>true</debtService>
-                    <paymentsServiceTutorial>true</paymentsServiceTutorial>
-                    <debtServiceTutorial>true</debtServiceTutorial>
+					<paymentService>false</paymentService>
+                    <debtService>false</debtService>
+                    <paymentsServiceTutorial>false</paymentsServiceTutorial>
+                    <debtServiceTutorial>false</debtServiceTutorial>
 				</node>
 				<node id="194.186.207.23">
 					<paymentService>true</paymentService>
