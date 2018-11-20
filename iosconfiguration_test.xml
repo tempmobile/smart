@@ -157,7 +157,7 @@ This XML file does not appear to have any style information associated with it. 
 <paymentsServiceTutorial>true</paymentsServiceTutorial>
 <debtServiceTutorial>true</debtServiceTutorial>
 <paymentService>true</paymentService>
-<debtService>false</debtService>
+<debtService>true</debtService>
 </node>
 <node id="ift-node1-mp.testonline.sberbank.ru">
 <enabled>true</enabled>
@@ -171,7 +171,7 @@ This XML file does not appear to have any style information associated with it. 
 <paymentsServiceTutorial>true</paymentsServiceTutorial>
 <debtServiceTutorial>true</debtServiceTutorial>
 <paymentService>true</paymentService>
-<debtService>false</debtService>
+<debtService>true</debtService>
 </node>
 <node id="psinode2.testonline.sberbank.ru">
 <enabled>true</enabled>
