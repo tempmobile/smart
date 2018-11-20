@@ -87,7 +87,7 @@ This XML file does not appear to have any style information associated with it. 
 </param>
 <param name="RecommendedDebt" description="Смарт Счета">
 <type>service</type>
-<enabled>true</enabled>
+<enabled>false</enabled>
 <nodes>
 <node id="node0.online.sberbank.ru">
 <enabled>false</enabled>
