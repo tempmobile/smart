@@ -87,7 +87,7 @@ This XML file does not appear to have any style information associated with it. 
 </param>
 <param name="RecommendedDebt" description="Смарт Счета">
 <type>service</type>
-<enabled>false</enabled>
+<enabled>true</enabled>
 <nodes>
 <node id="node0.online.sberbank.ru">
 <enabled>false</enabled>
@@ -156,7 +156,7 @@ This XML file does not appear to have any style information associated with it. 
 <enabled>true</enabled>
 <paymentsServiceTutorial>true</paymentsServiceTutorial>
 <debtServiceTutorial>true</debtServiceTutorial>
-<paymentService>true</paymentService>
+<paymentService>false</paymentService>
 <debtService>true</debtService>
 </node>
 <node id="ift-node1-mp.testonline.sberbank.ru">
@@ -170,7 +170,7 @@ This XML file does not appear to have any style information associated with it. 
 <enabled>true</enabled>
 <paymentsServiceTutorial>true</paymentsServiceTutorial>
 <debtServiceTutorial>true</debtServiceTutorial>
-<paymentService>true</paymentService>
+<paymentService>false</paymentService>
 <debtService>true</debtService>
 </node>
 <node id="psinode2.testonline.sberbank.ru">
