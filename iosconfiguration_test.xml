@@ -165,7 +165,7 @@
 <paymentsServiceTutorial>true</paymentsServiceTutorial>
 <debtServiceTutorial>true</debtServiceTutorial>
 <paymentService>true</paymentService>
-<debtService>true</debtService>
+<debtService>false</debtService>
 </node>
 <node id="ift-node3.testonline.sberbank.ru">
 <enabled>true</enabled>
@@ -200,7 +200,7 @@
 <paymentsServiceTutorial>true</paymentsServiceTutorial>
 <debtServiceTutorial>true</debtServiceTutorial>
 <paymentService>true</paymentService>
-<debtService>true</debtService>
+<debtService>false</debtService>
 </node>
 <node id="ift-node3-mp.testonline.sberbank.ru">
 <enabled>true</enabled>
